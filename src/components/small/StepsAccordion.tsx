@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Minus, Plus } from "@/constant/icons";
-import { AccordionItemData } from "@/constant/types";
 import { AnimatePresence, motion } from "framer-motion";
 
 const StepsAccordionItem = ({
@@ -65,7 +64,11 @@ const StepsAccordionItem = ({
                 {content.length > 1 ? (
                   <ul>
                     {content.map((item: string, i: number) => {
-                      return <li className="text-gray-600 py-2">{item}</li>;
+                      return (
+                        <li className="text-gray-600 py-2" key={i}>
+                          {item}
+                        </li>
+                      );
                     })}
                   </ul>
                 ) : (

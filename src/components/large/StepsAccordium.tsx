@@ -2,7 +2,6 @@ import { stepsI } from "@/constant/types";
 import { useState } from "react";
 import StepsAccordionItem from "../small/StepsAccordion";
 import Conatainer from "../layout/Conatainer";
-import Primary from "../small/Buttons/Primary";
 import { MdArrowForward } from "react-icons/md";
 import Link from "next/link";
 

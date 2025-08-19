@@ -1,6 +1,5 @@
 import React from "react";
 import { Quote } from "@/constant/icons";
-import Rating from "./Rating";
 
 type Props = {
   text: string;

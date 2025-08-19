@@ -1,6 +1,5 @@
 import React from "react";
 import Conatainer from "../layout/Conatainer";
-import MetricsContainer from "../medium/MetricsContainer";
 import ServicesProgramSlider from "../medium/slider/Services.Program.Slider";
 import { programServicesSectionI } from "@/constant/types";
 

@@ -1,7 +1,6 @@
 import React from "react";
 import Conatainer from "../layout/Conatainer";
 import Testimonials from "../medium/slider/Testimonials";
-import TransparentBlue from "../small/Buttons/TransparentBlue";
 import bgImg from "../../../public/Image/testimonial-bg.png";
 
 const HomeTestimonials = () => {

@@ -15,13 +15,7 @@ import {
   Support,
   License,
 } from "./icons";
-import {
-  broadcast,
-  businessGroup,
-  insurance,
-  policy,
-  processIcon,
-} from "@/assets/icons";
+import { broadcast, insurance, policy, processIcon } from "@/assets/icons";
 
 const SocialLinks: { Icon: IconType; name: string; url: string }[] = [
   {
