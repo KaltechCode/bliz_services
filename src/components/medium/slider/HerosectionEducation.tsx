@@ -132,8 +132,8 @@ function HerosectionEducation() {
               },
             }}
           >
-            <Primary text="Apply Now" url="/education" />
-            <Transparent text="More Details" url="/contact" />
+            <Primary text="Apply Now" url="/contact-us" />
+            <Transparent text="More Details" url="/education" />
           </motion.div>
         </motion.div>
       </div>

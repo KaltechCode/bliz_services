@@ -5,6 +5,7 @@ import { Menu } from "@/constant/icons";
 import Transparent from "@/components/small/Buttons/Transparent";
 import Sidebar from "./Sidebar";
 import Logo from "../../../assets/images/logo.png";
+import Link from "next/link";
 function SmallScreen() {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -31,7 +32,9 @@ function SmallScreen() {
         <div className={clLogoWrapper}>
           {/* small screen modal logo wrapper */}
           <div className={clLogoInnerWrapper}>
-            <Image src={Logo} alt="Bliaz" width={250} height={250} />
+            <Link href={"/"}>
+              <Image src={Logo} alt="Bliaz" width={250} height={250} />
+            </Link>
           </div>
         </div>
 

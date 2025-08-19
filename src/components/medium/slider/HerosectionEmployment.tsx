@@ -132,8 +132,8 @@ function HerosectionEmployment() {
             }}
             className="flex gap-4"
           >
-            <Primary text="Apply Now" url="/employment" />
-            <Transparent text="More Details" url="/contact" />
+            <Primary text="Apply Now" url="/contact-us" />
+            <Transparent text="More Details" url="/employment" />
           </motion.div>
         </motion.div>
       </div>
