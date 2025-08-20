@@ -6,7 +6,7 @@ type Props = {
   image: string;
   text: string;
   url?: string;
-  title?: string;
+  title: string;
 };
 
 const InvertedBorder = ({ image, text, url, title }: Props) => {
@@ -15,7 +15,7 @@ const InvertedBorder = ({ image, text, url, title }: Props) => {
       className={`h-[300px] md:aspect-square md:h-auto relative top-0 left-0 overflow-hidden rounded-[25px]`}
     >
       <div className="absolute top-0 left-0 w-[100%] h-[100%] bg-white">
-        <ServicesContent text={text} title={title ? title : ""} image={image} />
+        <ServicesContent text={text} title={title} image={image} />
       </div>
 
       <div

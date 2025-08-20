@@ -7,19 +7,25 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import CasesBox from "../CasesBox";
 import { programsServicesI } from "@/constant/types";
+import { type Swiper as SwiperRef } from "swiper";
 
 export default function ServicesProgramSlider({
   data,
+  swiperRef,
 }: {
   data: programsServicesI[];
+  swiperRef: React.RefObject<SwiperRef | null>;
 }) {
   return (
     <div className="w-[100%] h-[100%] overflow-hidden">
       <Swiper
         autoplay={true}
-        speed={500}
+        speed={100}
         modules={[Autoplay]}
         loop={true}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
         breakpoints={{
           400: {
             slidesPerView: "auto",

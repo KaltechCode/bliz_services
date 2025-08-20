@@ -1,9 +1,19 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Conatainer from "../layout/Conatainer";
 import HomeServicesSwiper from "../medium/slider/HomeServicesSlider";
 import Image from "next/image";
+import { type Swiper as SwiperRef } from "swiper";
+
 const HomeServices = () => {
+  const ref = useRef<SwiperRef>(null);
+  // const handlePrev = () => {
+  //   ref.current?.slidePrev();
+  // };
+  // const handleNext = () => {
+  //   ref.current?.slideNext();
+  // };
+
   return (
     <section className="h-auto py-24 lg:py-0  md:min-h-[100vh] lg:h-[100vh] flex items-center relative top-0 left-0 bg-gray-100 md:bg-white">
       <Conatainer full={false}>
@@ -20,7 +30,7 @@ const HomeServices = () => {
 
           {/* services slides container */}
           <div className="w-[100%] lg:w-[100%] 2k:w-[90%] flex mt-10 lg:mt-12">
-            <HomeServicesSwiper />
+            <HomeServicesSwiper swiperRef={ref} />
           </div>
         </div>
       </Conatainer>

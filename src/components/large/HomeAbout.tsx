@@ -22,7 +22,7 @@ const HomeAbout = () => {
 
           <div className="mt-5 w-[90%] md:w-full xl:w-[80%]">
             <h2 className="py-1 text-black">
-              We specialize in seamless{" "}
+              We specialize in seamless <br />
               <strong className="text-blue border-b-2 border-blue ml-1">
                 International Relocations
               </strong>

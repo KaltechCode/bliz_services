@@ -4,11 +4,14 @@ import { useEffect, useState } from "react";
 
 import "swiper/css";
 
-import { Autoplay } from "swiper/modules";
 import { homeServices } from "@/constant/data";
 import InvertedBorder from "../InvertedBorder";
-
-export default function HomeServicesSwiper() {
+import { type Swiper as SwiperRef } from "swiper";
+export default function HomeServicesSwiper({
+  swiperRef,
+}: {
+  swiperRef: React.RefObject<SwiperRef | null>;
+}) {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     setOpen(true);
@@ -18,10 +21,12 @@ export default function HomeServicesSwiper() {
       <Swiper
         autoplay={true}
         speed={500}
-        modules={[Autoplay]}
         loop={true}
         observer={true}
-        observeParents={true}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
+        // observeParents={true}
         breakpoints={{
           400: {
             slidesPerView: "auto",

@@ -112,14 +112,14 @@ export const homeServices = [
   {
     image: "/new/study-abroad-1.jpg",
     title: "Study Abroad",
-    url: "/",
-    text: "We offer fantastic assistance if you wish to further your education overseas",
+    url: "/education",
+    text: "We offer fantastic assistance if you wish to further your education overseas.",
   },
   {
     image: "/new/leadership-banner.jpg",
     title: "Work Abroad",
-    url: "/",
-    text: "We’re familiar with the local job demand and work legislation",
+    url: "/employment",
+    text: "We’re familiar with the local job demand and work legislation.",
   },
   // {
   //   image: "/new/happy-teaam.jpg",
@@ -282,6 +282,16 @@ export const educationServicesProgram = [
     image: "/new/united-Kingdom-education.jpg",
     name: "United Kingdom",
     text: "The prestige of earning a degree from a US-accredited university continues to make the US the top choice for overseas students. Higher education institutions in the US are renowned for having exceptionally high standards for the quality of their teaching methods, intellectual rigor, and learning experiences.",
+  },
+  {
+    image: "/new/united-state-education.jpg",
+    name: "Ireland",
+    text: "The prestige of earning a degree from a US-accredited university continues to make the US the top choice for overseas students. Higher education institutions in the US are renowned for having exceptionally high standards for the quality of their teaching methods, intellectual rigor, and learning experiences.",
+  },
+  {
+    image: "/new/canada-education.jpg",
+    name: "Other Sengeh Countries",
+    text: "Canada, which is home to some of the best universities in the world, is emerging as a model for high-quality graduate education and research. In the QS and Times Higher Education global university rankings, respectively, 26 and 27, Canadian universities are ranked. Academic research in a variety of sectors, including technology, medicine, agriculture, telecommunications, and environmental science, is also supported and encouraged by the Canadian government. ",
   },
 ];
 

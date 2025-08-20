@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import Conatainer from "../layout/Conatainer";
 import ServicesProgramSlider from "../medium/slider/Services.Program.Slider";
 import { programServicesSectionI } from "@/constant/types";
+import { type Swiper as SwiperRef } from "swiper";
 
 function ServicesPrograms({ title1, title2, data }: programServicesSectionI) {
+  const ref = useRef<SwiperRef>(null);
   // const [country, setCountry] = useState("USA");
   return (
     <section className="h-auto py-20 md:min-h-[100vh]  lg:py-0 lg:min-h-[100vh]  xl:py-16 3k:max-h-[800px] flex items-center bg-white casesSection-landscape">
@@ -22,12 +24,16 @@ function ServicesPrograms({ title1, title2, data }: programServicesSectionI) {
         </div>
 
         <div className="mt-10 md:mt-16">
-          <ServicesProgramSlider data={data} />
+          <ServicesProgramSlider data={data} swiperRef={ref} />
         </div>
 
         {/* <div className="mt-16">
           <MetricsContainer />
         </div> */}
+        <div className="">
+          <button className=""></button>
+          <button className=""></button>
+        </div>
       </Conatainer>
     </section>
   );
