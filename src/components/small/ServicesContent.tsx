@@ -23,12 +23,12 @@ function ServicesContent({ text, image, title }: Props) {
       {/* overlay color */}
 
       <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end px-2  pb-5 ">
-        <div className="bg-[#0a193a] bg-opacity-60 px-4 py-2 rounded-2xl">
+        <div className="bg-[#0a193a] bg-opacity-60 px-4 py-2 3k:py-4 rounded-2xl">
           <div className="">
-            <h2 className="text-white medium-title">{title}</h2>
+            <h2 className="text-white Second-Emphasis-Text">{title}</h2>
           </div>
           <div className="mt-2">
-            <p className="text-white">{text}</p>
+            <p className="text-white text-base font-normal">{text}</p>
           </div>
         </div>
       </div>

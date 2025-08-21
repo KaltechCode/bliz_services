@@ -17,20 +17,20 @@ const HomeAbout = () => {
         {/* content container */}
         <div className="md:mt-5 px-3 flex flex-col md:col-start-2 md:col-end-3">
           <div className="bg-gradient-to-r from-[#fff] to-gray-100 px-7 rounded-full py-2 w-max">
-            <p className="text-blue">ABOUT US </p>
+            <p className={`text-blue session-title-text`}>ABOUT US </p>
           </div>
 
-          <div className="mt-5 w-[90%] md:w-full xl:w-[80%]">
-            <h2 className="py-1 text-black">
+          <div className="mt-5 w-[90%] md:w-full xl:w-[80%] 3k:w-[50%] border-b-2 border-blue ">
+            <h2 className="py-1 text-black session-title-text">
               We specialize in seamless <br />
-              <strong className="text-blue border-b-2 border-blue ml-1">
+              <strong className="text-blue ml-1 session-title-text">
                 International Relocations
               </strong>
             </h2>
           </div>
 
-          <div className="mt-7 xl:w-[90%]">
-            <p className="text-black">
+          <div className="mt-7 xl:w-[90%] 3k:[70%]">
+            <p className="text-black text-base font-normal">
               We make relocating abroad stress-free with expert guidance at
               every step. From visas to settling in, we handle it all
               seamlessly. Start your journey with confidence today!
@@ -44,7 +44,7 @@ const HomeAbout = () => {
 
           <div className="bg-white py-1 mt-5 rounded-full md:flex-row w-max lg:px-2 self-start">
             <div className="rounded-xl px-4 py-3 flex">
-              <TransparentBlue text="Contact Us" url="/contact-us" />
+              <TransparentBlue text="Apply Now" url="/contact-us" />
             </div>
 
             {/* Rating */}

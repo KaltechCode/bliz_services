@@ -22,7 +22,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       className="rounded-full my-5"
     >
       <button
-        className={`w-full py-3 flex gap-5 items-center  hover:bg-gray-50 transition-colors bg-white rounded-3xl  px-2 ${
+        className={`w-full py-3 flex gap-5 items-center  hover:bg-gray-50 transition-colors bg-white rounded-3xl px-2 ${
           isOpen ? "rounded-br-none rounded-bl-none" : "rounded-3xl"
         }`}
         onClick={onClick}
@@ -34,7 +34,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
             <Plus color="#fff" size={25} className="font-bold" />
           )}
         </div>
-        <span className="text-md font-medium text-gray-900">{title}</span>
+        <span className="Emphasis-text !text-gray-900">{title}</span>
         <motion.span
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}

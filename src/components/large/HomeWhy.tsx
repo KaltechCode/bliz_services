@@ -8,7 +8,7 @@ import Image from "next/image";
 const HomeWhy = () => {
   return (
     <section
-      className="py-20 lg:py-0 w-full bg-white h-auto bg-cover bg-no-repeat md:min-h-[100vh] flex items-center bg-left-bottom md:bg-center"
+      className="py-20 lg:py-24 w-full bg-white h-auto bg-cover bg-no-repeat md:min-h-[100vh] flex items-center bg-left-bottom md:bg-center"
       style={{ backgroundImage: `url(${bgImg.src})` }}
     >
       <Conatainer full={true}>
@@ -17,13 +17,15 @@ const HomeWhy = () => {
           <div className="md:order-last">
             {/* tag  */}
             <div className="bg-gradient-to-r from-gray-200 to-gray-100 px-7 rounded-full py-2 w-max">
-              <p className="text-blue">WHY WE ARE THE BEST </p>
+              <p className="!text-blue session-title-text">
+                WHY WE ARE THE BEST{" "}
+              </p>
             </div>
             {/* title */}
             <div className="mt-5 w-[90%] md:w-full xl:w-[80%] md:t-3">
-              <h2 className="py-1  text-black ">
+              <h2 className="py-1 !text-black session-title-text">
                 Proven Success,{" "}
-                <strong className="text-blue border-b-2 border-blue ml-1">
+                <strong className="!text-blue border-b-2 border-blue ml-1">
                   Unmatched Expertise{" "}
                 </strong>
                 Your Global Dreams!
@@ -31,7 +33,7 @@ const HomeWhy = () => {
             </div>
             {/*  text content*/}
             <div className="mt-7 xl:w-[90%]">
-              <p className="text-black">
+              <p className="text-black text-base font-normal">
                 We make relocating abroad stress-free with expert guidance at
                 every step. From visas to settling in, we handle it all
                 seamlessly. Start your journey with confidence today!
@@ -41,7 +43,7 @@ const HomeWhy = () => {
               <HomeProgressContainer />
             </div>
             <div className="mt-10">
-              <TransparentBlue url="/contact-us" text="Contact Us" />
+              <TransparentBlue url="/contact-us" text="Apply Now" />
             </div>
           </div>
 

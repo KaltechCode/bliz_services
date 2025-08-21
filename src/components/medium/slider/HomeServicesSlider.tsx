@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect, useState } from "react";
 
 import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
 import { homeServices } from "@/constant/data";
 import InvertedBorder from "../InvertedBorder";
@@ -19,10 +20,16 @@ export default function HomeServicesSwiper({
   return (
     <div className="w-[100%] h-max md:h-[400px] xl:h-[500px] 2xl:h-[600px] 3k:h-[800px] overflow-hidden">
       <Swiper
-        autoplay={true}
-        speed={500}
+        className="smooth-swiper"
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        speed={6000}
         loop={true}
         observer={true}
+        modules={[Autoplay]}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}

@@ -7,7 +7,7 @@ function TransparentBlue({ url, text }: { url: string; text: string }) {
   return (
     <Link
       href={url}
-      className="px-[16px] py-[8px] bg-transparent text-blue border border-blue border-solid rounded-full flex gap-2 items-center group hover:bg-blue hover:text-white hover:border-blue transition-all duration-500 h-max
+      className="w-max px-[16px] py-[8px] bg-transparent text-[#1717B0] font-normal text-base border border-[#1717B0] border-solid rounded-full flex gap-2 items-center group hover:bg-[#1717B0] hover:text-white hover:border-blue transition-all duration-500 h-max
     "
     >
       {text}

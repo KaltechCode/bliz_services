@@ -38,7 +38,7 @@ h1,
 .big-title {
   font-size: clamp(1.5rem, calc(1.25rem + 2vw), 3rem);
 }
-h2,
+
 .medium-title {
   font-size: clamp(1rem, calc(1rem + 1.5vw), 2rem);
   font-weight: 700;
@@ -52,7 +52,8 @@ h3.small-title {
 }
 
 .emphasis-title {
-  font-size: clamp(1rem, calc(1rem + 0.8vw), 1.4rem);
+  /* font-size: clamp(1rem, calc(1rem + 0.8vw), 1.4rem); */
+  font-size: calc(var(--font-scale) * clamp(1.5rem, calc(1.25rem + 2vw), 3rem));
   font-weight: 600;
   font-family: var(--font-optima);
 }
@@ -71,6 +72,29 @@ p,
   font-size: clamp(2rem, calc(1.8rem + 2vw), 3rem);
   line-height: 1.2;
   font-weight: 700;
+}
+
+.Emphasis-text {
+  font-size: clamp(1rem, calc(0.6rem + 0.85vw), 1.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f9fafb;
+  font-family: optima;
+}
+
+.Second-Emphasis-Text {
+  font-size: clamp(0.85rem, calc(0.5rem + 0.85vw), 1.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: #f9fafb;
+  font-family: optima;
+}
+
+.session-title-text {
+  font-size: calc(0.9 * clamp(1.2rem, calc(0.8rem + 1.5vw), 2rem));
+  font-weight: 700;
+  line-height: 1.3;
+  font-family: optima;
 }
 
 .header__logo-bg {
@@ -352,6 +376,10 @@ p,
   @media (min-width: 669px) and (max-width: 768px) {
     width: 60% !important;
   }
+}
+/* Make Swiper transitions linear for smoother autoplay */
+.smooth-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
 }
 .testmonial-box {
   @media (min-width: 1024px) and (max-width: 1095px) {

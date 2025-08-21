@@ -15,6 +15,7 @@ import {
   Support,
   License,
 } from "./icons";
+
 import { broadcast, insurance, policy, processIcon } from "@/assets/icons";
 
 const SocialLinks: { Icon: IconType; name: string; url: string }[] = [
@@ -39,6 +40,9 @@ const SocialLinks: { Icon: IconType; name: string; url: string }[] = [
     url: "https://www.linkedin.com/company/bliz-services",
   },
 ];
+
+export const linkToMoreTestimonial =
+  "https://www.google.com/search?sca_esv=aed0d697877661b8&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E_NncRk6vLpqRfuVhINiUYS8hoWxRE64YqtxDt2piFfN_JAQSX_XCnSbta2l2xAVYV1skOjQNvYPF_Xsv39Mt7SJisZq&q=Bliz+Services+Reviews&sa=X&ved=2ahUKEwiFjLLIq5ePAxVIG9AFHVpNJEEQ0bkNegQINBAE&biw=1792&bih=841&dpr=1";
 
 export const location = [
   {
@@ -73,30 +77,30 @@ export const headerAddress = [
 export const testimonials = [
   {
     image: "/testimonial/bliz-johnson.avif",
-    name: "Funmilola Akinleye",
+    name: "syds Atem",
     // role: "Investor",
-    text: "Bliz is super and very transparent. He carry you along as the application progresses and give advice on the next step to take to bring about the success of the application and still never leave you even after the success of the application. I have recommend many other people and will still continue. Love from Canada.",
+    text: "Their services are fast and reliable compared to other services I have used in the past. Bliz services keeps in contact with you all the way to the end. They are the real deal. They make every process easy to manage and follow through.",
     // rating: 5,
   },
   {
     image: "/testimonial/bliz-Okarfor.webp",
-    name: "Syds Atem",
+    name: "ingride magang",
     // role: "Actor ",
-    text: "The text servicess agency company also impress us with their transpa regarding cost. Their services is the best",
+    text: "A dedicated, dynamic, and responsible company. Thank you for the quality of service and customer service",
     // rating: 3,
   },
   {
     image: "/testimonial/bliz-joyce.avif",
-    name: "ingride magang",
+    name: "Barry Ayodi",
     // role: "Social Maketer ",
-    text: "une entreprise dévoué, dynamique et responsable. merci pour la qualité de service et le traitement clientèle",
+    text: "Great services. Very dedicated and caring Staff",
     // rating: 2,
   },
   {
     image: "/testimonial/bliz-emmauel.webp",
-    name: "Barry Ayodi",
+    name: "Antony Makenzi",
     // role: "Client ",
-    text: "Great services. Very dedicated and caring Staff",
+    text: "Great support all through...I'm a satisfied client",
     // rating: 4,
   },
   {
@@ -159,31 +163,34 @@ export const homeAboutParagrahText = [
 export const accordionData: AccordionItemData[] = [
   {
     id: 1,
-    title: "Hassle-Free Process",
+    title: "Expert Guidance Every Step of the Way",
     content: {
       description:
-        "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation",
+        "We maintain strong connections with reputable universities and training institutions across the globe. Our network ensures you are matched with the best options to achieve your desired qualifications.",
     },
   },
   {
     id: 2,
-    title: "Faster Turnaround",
+    title: "Career-Boosting Work Placement Support",
     content: {
-      description: "Steps to obtain a work permit:",
+      description:
+        "Beyond education, we help you secure overseas work placements that enhance your skills and global exposure. Our guidance ensures you are well-prepared for international career success.",
     },
   },
   {
     id: 3,
-    title: "Affordable Pricing",
+    title: "Career-Boosting Work Placement Support",
     content: {
-      description: "Our comprehensive immigration services include:",
+      description:
+        "Beyond education, we help you secure overseas work placements that enhance your skills and global exposure. Our guidance ensures you are well-prepared for international career success.",
     },
   },
   {
     id: 4,
-    title: "Ongoing Support",
+    title: "Simplified Application Process",
     content: {
-      description: "Our comprehensive immigration services include:",
+      description:
+        "From filling out applications to preparing necessary documents, we take the stress out of the process. Our team ensures your applications are accurate, complete, and submitted on time—giving you the best chance of acceptance.",
     },
   },
 ];

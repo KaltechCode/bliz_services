@@ -1,4 +1,3 @@
-import Transparent from "@/components/small/Buttons/Transparent";
 import { Waving } from "@/constant/icons";
 import React from "react";
 import { motion } from "framer-motion";
@@ -10,7 +9,7 @@ function HerosectionEmployment() {
   return (
     <div className="HeroWork__banner-bg w-full h-full grid md:grid-cols-10 lg:grid-cols-9 items-center lg:items-end  relative left-0 right-0 z-40 overflow-hidden">
       <HerosectionTopClipy />
-      <div className="w-[90%] mx-auto md:w-[100%] md:col-start-2 md:col-end-10 lg:col-start-2 lg:col-end-9 3k:col-start-3 bg-[#0a193a] bg-opacity-60 px-4 rounded-2xl flex flex-col 3k:gap-10 3k:py-10 gap-7 py-7 lg:mb-9">
+      <div className="w-[90%] mx-auto md:w-[100%] md:col-start-2 md:col-end-10 lg:col-start-2 lg:col-end-9 3k:col-start-3 bg-[#0a193a] bg-opacity-60 px-4 rounded-2xl flex flex-col 3k:gap-10 3k:py-10 gap-7 py-5 lg:mb-9">
         {/* tagged */}
         <motion.div
           className="overflow-hidden"
@@ -63,7 +62,7 @@ function HerosectionEmployment() {
                 },
               },
             }}
-            className="text-white text-[30px] md:text-[60px] lg:text-[80px]"
+            className="text-white text-[30px] md:text-[60px] lg:text-[80px] leading-[1]"
           >
             <span>Make A </span>
             <span className="text-pink font-bold drop-shadow-lg">
@@ -99,13 +98,19 @@ function HerosectionEmployment() {
             }}
             className="flex flex-col lg:flex-row lg:gap-x-3 w-full lg:w-[80%] xl:w-[60%] flex-wrap 3k:flex-col"
           >
-            <p className="text-white py-1">Do you desire to work Overseas?</p>
-            <p className="text-white py-1">
-              Do you want to relocate to Overseas?
-            </p>
-            <p className="text-white py-1">
-              Do you understand the application process?
-            </p>
+            <h2>
+              <span className={`text-[#F9FAFB] py-1 Emphasis-text`}>
+                Do you desire to work Overseas?
+              </span>
+              <br />
+              <span className={`text-[#F9FAFB] py-1 Emphasis-text`}>
+                Do you want to relocate to Overseas?
+              </span>
+              <br />
+              <span className={`text-[#F9FAFB] py-1 Emphasis-text`}>
+                Do you understand the application process?
+              </span>
+            </h2>
           </motion.div>
         </motion.div>
 
@@ -133,7 +138,7 @@ function HerosectionEmployment() {
             className="flex gap-4"
           >
             <Primary text="Apply Now" url="/contact-us" />
-            <Transparent text="More Details" url="/employment" />
+            {/* <Transparent text="More Details" url="/employment" /> */}
           </motion.div>
         </motion.div>
       </div>
