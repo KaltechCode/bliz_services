@@ -2,7 +2,6 @@ import React from "react";
 import Conatainer from "../layout/Conatainer";
 import Testimonials from "../medium/slider/Testimonials";
 import bgImg from "../../../public/Image/testimonial-bg.png";
-import TransparentBlue from "../small/Buttons/TransparentBlue";
 import Link from "next/link";
 import { linkToMoreTestimonial } from "@/constant/data";
 
