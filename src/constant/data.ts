@@ -258,8 +258,8 @@ export const specialServics = [
 
 export const homeProgressData = [
   {
-    label: "University Addmissions",
-    percentage: 85,
+    label: "University Admissions",
+    percentage: 98,
   },
   {
     label: "Job Placement Success",
@@ -297,7 +297,7 @@ export const educationServicesProgram = [
   },
   {
     image: "/new/canada-education.jpg",
-    name: "Other Sengeh Countries",
+    name: "Other Shengen Countries",
     text: "Canada, which is home to some of the best universities in the world, is emerging as a model for high-quality graduate education and research. In the QS and Times Higher Education global university rankings, respectively, 26 and 27, Canadian universities are ranked. Academic research in a variety of sectors, including technology, medicine, agriculture, telecommunications, and environmental science, is also supported and encouraged by the Canadian government. ",
   },
 ];
