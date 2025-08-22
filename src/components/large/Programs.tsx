@@ -20,9 +20,9 @@ function Programs({
 }) {
   const numOfItem = data.length;
   return (
-    <section className="h-auto py-20 min-h-[100vh] md:min-h-[100vh]  lg:py-0 lg:min-h-[100vh]  xl:py-16 3k:max-h-[800px] flex items-center bg-[#F7F9FF] casesSection-landscape">
+    <section className="h-auto py-20 min-h-[100vh] md:min-h-[100vh]  lg:py-10 lg:min-h-[100vh]  xl:py-16 3k:max-h-[800px] flex items-center bg-[#F7F9FF] casesSection-landscape">
       <Conatainer full={false}>
-        <h2 className="headingStyle text-center text-black">
+        <h2 className="session-title-text text-center !text-black">
           {title} <span className="text-blue">{spanTitle}</span>
         </h2>
         <div className="w-[100%] h-[100%] flex flex-col sm:landscape:flex-row md:flex-row justify-between flex-wrap gap-y-10 gap-4 mt-10 md:mt-16">
@@ -40,20 +40,20 @@ function Programs({
                 <div className="w-full">
                   {formatBoxTitle ? (
                     <h3
-                      className={`medium-title text-blue text-center even:!text-white !font-bold ${
-                        (i + 1) % 2 == 0 ? "text-white" : "text-[#323232]/65"
+                      className={`Emphasis-text  text-center even:!text-white ${
+                        (i + 1) % 2 == 0 ? "!text-white" : "!text-blue"
                       }`}
                     >
-                      {splitIntoWords(item.title)[0]} <br />
-                      {splitIntoWords(item.title)[1]}
+                      {splitIntoWords(item.title)[0].toUpperCase()} <br />
+                      {splitIntoWords(item.title)[1].toUpperCase()}
                     </h3>
                   ) : (
                     <h3
-                      className={`h3HeadingStyle text-blue text-center even:!text-white ${
-                        (i + 1) % 2 == 0 ? "text-white" : "text-[#323232]/65"
+                      className={`Emphasis-text !text-blue text-center even:!text-white ${
+                        (i + 1) % 2 == 0 ? "!text-white" : "text-[#323232]/65"
                       }`}
                     >
-                      {item.title}
+                      {item.title.toUpperCase()}
                     </h3>
                   )}
                 </div>
@@ -69,7 +69,7 @@ function Programs({
                         key={k}
                       >
                         <p
-                          className={`font-secondaryFont font-[500] pTextStyle ${
+                          className={`text-base font-normal ${
                             (i + 1) % 2 == 0
                               ? "text-white"
                               : "text-[#323232]/65"

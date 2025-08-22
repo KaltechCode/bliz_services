@@ -44,7 +44,7 @@ function EducationQuoteBanner({
 
             <div className="mx-auto">
               <p
-                className={`max-w-2xl text-white text ${
+                className={`max-w-2xl text-white text-base font-normal ${
                   center ? "text-center" : "text-left"
                 }`}
               >

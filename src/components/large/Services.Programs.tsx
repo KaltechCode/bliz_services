@@ -20,9 +20,9 @@ function ServicesPrograms({ title1, title2, data }: programServicesSectionI) {
         <div className="">
           <div className="md:grid grid-cols-10 gap-1 items-end">
             <div className="mt-5 w-[90%] md:col-span-6">
-              <h2 className="py-1 text-black">
+              <h2 className="py-1 session-title-text !text-black ">
                 {title1} <br />
-                <strong className="text-blue border-b-2 border-blue">
+                <strong className="session-title-text !text-blue border-b-2 border-blue">
                   {title2}
                 </strong>
               </h2>

@@ -48,7 +48,7 @@ function HerosectionEducation() {
           <motion.h2
             initial="initial"
             whileInView="view"
-            className="text-white text-[30px] md:text-[60px] lg:text-[80px]"
+            className="text-white text-[30px] md:text-[60px] lg:text-[80px] leading-[1]"
           >
             <motion.div
               className=""

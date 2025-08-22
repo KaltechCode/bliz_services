@@ -49,7 +49,7 @@ function ServicesBanner({
                     {list.map((item: string, i: number) => (
                       <div className=" py-1 flex items-center gap-2" key={i}>
                         <span className="text-white">*</span>{" "}
-                        <h2 className="emphasis-title text-white">{item}</h2>
+                        <h2 className="Emphasis-text text-white">{item}</h2>
                       </div>
                     ))}
                   </div>

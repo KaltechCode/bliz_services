@@ -57,7 +57,7 @@ const StepsAccordionItem = ({
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 1 }}
               className="overflow-hidden col-start-4 col-end-10 3k:col-end-8"
             >
               <div className="p-6 bg-white space-y-4">
@@ -65,14 +65,19 @@ const StepsAccordionItem = ({
                   <ul>
                     {content.map((item: string, i: number) => {
                       return (
-                        <li className="text-gray-600 py-2" key={i}>
+                        <li
+                          className="text-gray-600 py-2 text-base font-normal"
+                          key={i}
+                        >
                           {item}
                         </li>
                       );
                     })}
                   </ul>
                 ) : (
-                  <p className="text-gray-600">{content[0]}</p>
+                  <p className="text-gray-600 text-base font-normal">
+                    {content[0]}
+                  </p>
                 )}
               </div>
             </motion.div>

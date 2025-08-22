@@ -17,8 +17,8 @@ function ProgramsBox({
         <ServicesIcons Icon={image} />
       </div>
       <div className="flex flex-col gap-3 w-[80%]">
-        <h3 className="text-lg font-bold text-black">{title}</h3>
-        <p className="text-base text-black">{text}</p>
+        <h3 className="Second-Emphasis-Text  !text-black">{title}</h3>
+        <p className="text-base font-normal !text-black">{text}</p>
       </div>
     </div>
   );

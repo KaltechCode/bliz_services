@@ -171,10 +171,10 @@ export const accordionData: AccordionItemData[] = [
   },
   {
     id: 2,
-    title: "Career-Boosting Work Placement Support",
+    title: "Access to Top Institutions Worldwide",
     content: {
       description:
-        "Beyond education, we help you secure overseas work placements that enhance your skills and global exposure. Our guidance ensures you are well-prepared for international career success.",
+        "We maintain strong connections with reputable universities and training institutions across the globe. Our network ensures you are matched with the best options to achieve your desired qualifications.",
     },
   },
   {

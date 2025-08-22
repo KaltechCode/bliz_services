@@ -34,7 +34,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
             <Plus color="#fff" size={25} className="font-bold" />
           )}
         </div>
-        <span className="Emphasis-text !text-gray-900">{title}</span>
+        <span className="Emphasis-text !text-gray-900 flex-1  text-left">
+          {title}
+        </span>
         <motion.span
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3 }}

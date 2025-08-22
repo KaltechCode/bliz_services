@@ -19,7 +19,7 @@ const Accordion: React.FC<AccordionProps> = ({ items, className }) => {
 
   return (
     <div
-      className={`w-full flex-col gap-5 mx-auto rounded-lg overflow-hidden mt-5 lg:mt-10 ${className} px-2`}
+      className={`w-full flex-col gap-5 mx-auto rounded-lg overflow-hidden mt-5 lg:mt-10 ${className}`}
     >
       {items.map((item, index) => (
         <AccordionItem
