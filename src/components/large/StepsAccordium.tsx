@@ -16,7 +16,7 @@ function StepsAccordium({
 }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   return (
-    <section className="h-auto py-20 md:min-h-[100vh] lg:py-12 lg:min-h-[100vh]  xl:py-16 3k:max-h-[800px] flex items-center bg-white casesSection-landscape">
+    <section className="h-auto py-20 md:min-h-[100vh] lg:py-12 lg:min-h-[100vh]  xl:py-24 3k:max-h-[800px] flex items-center bg-white">
       <Conatainer full={false}>
         <h2 className="session-title-text !text-black font-optima">
           Easy Steps to Apply.

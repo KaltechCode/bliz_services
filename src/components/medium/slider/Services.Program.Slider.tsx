@@ -19,13 +19,10 @@ export default function ServicesProgramSlider({
   return (
     <div className="w-[100%] h-[100%] overflow-hidden">
       <Swiper
-        className="smooth-swiper"
+        // className="smooth-swiper"
         autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
           pauseOnMouseEnter: true,
         }}
-        speed={6000}
         modules={[Autoplay]}
         loop={true}
         onSwiper={(swiper) => {

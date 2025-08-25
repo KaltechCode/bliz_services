@@ -1,4 +1,5 @@
 import React from "react";
+import Primary from "../small/Buttons/Primary";
 
 function CasesBox({
   image,
@@ -18,8 +19,8 @@ function CasesBox({
         <div className="absolute bottom-16 left-1/2 w-[90%] -translate-x-1/2 px-5 pt-3 z-10 overflow-y-scroll no-scrollbar opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-[2s] ease-out">
           <p className="text-white h-[200px]">{text}</p>
         </div>
-        <h2 className="absolute bottom-4 left-5 z-10 text-lg font-semibold text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-[2s] ease-out">
-          {name}
+        <h2 className="absolute bottom-4 left-5 z-10  text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-[.5] ease-out">
+          <Primary text="Contact Us" url="/apply/study" />
         </h2>
       </div>
       <h2 className="absolute bottom-0 left-0 px-4 z-10 text-lg font-semibold text-white opacity-100 group-hover:opacity-0 w-full bg-darkblue/70 bg-opacity-10 py-2">
