@@ -29,19 +29,26 @@ const StepsAccordionItem = ({
         </div>
 
         <button
-          className={`col-span-8 w-full py-3 flex gap-5 xl:gap-7 items-center transition-colors  rounded-3xl  px-2 ${
+          className={`col-span-8 w-full py-3 flex gap-5 xl:gap-12 items-center transition-colors  rounded-3xl  px-2 ${
             isOpen ? "rounded-br-none rounded-bl-none" : "rounded-3xl"
           }`}
           onClick={onClick}
         >
-          <div className="h-[35px] w-[35px] rounded-full bg-black flex justify-center items-center">
+          <div className="h-[25px] w-[25px] min-h-[25px] min-w-[25px]  xl:h-[30px] xl:w-[30px] rounded-full bg-black flex justify-center items-center">
             {isOpen ? (
-              <Minus color="#fff" size={25} className="font-bold" />
+              <Minus
+                color="#fff"
+                className="font-bold text-[18px] xl:text-[25px]"
+              />
             ) : (
-              <Plus color="#fff" size={25} className="font-bold" />
+              <Plus
+                color="#fff"
+                className="font-bold text-[18px] xl:text-[25px]"
+              />
             )}
           </div>
-          <span className="text-gray-600 medium-title font-medium">
+
+          <span className="text-gray-600 medium-title !font-normal">
             {title}
           </span>
           <motion.span

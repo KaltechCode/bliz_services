@@ -49,7 +49,7 @@ const FAQAccordium = ({
         </div>
 
         <p
-          className={`col-span-6 lg:col-span-6 text-left font-optima medium-title font-medium text-black`}
+          className={`col-span-6 lg:col-span-6 text-left font-optima medium-title !font-normal text-black`}
         >
           {title}
         </p>

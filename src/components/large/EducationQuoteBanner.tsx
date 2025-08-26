@@ -32,12 +32,12 @@ function EducationQuoteBanner({
       <div className="relative z-10 h-full grid place-items-center text-center">
         <Conatainer full={false}>
           <div className="flex flex-col items-center gap-6 md:gap-8 w-[95%] mx-auto">
-            <h3 className="text-white font-optima font-bold leading-tight w-[100%] lg:w-[80%] xl:w-[70%] big-title">
+            <h3 className="text-white font-optima leading-tight w-[100%] lg:w-[80%] xl:w-[70%] big-title !font-medium">
               {quote}
             </h3>
 
             {author && (
-              <p className="text-white font-optima font-semibold medium-title">
+              <p className="text-white font-optima medium-title !font-normal">
                 {author}
               </p>
             )}

@@ -37,6 +37,8 @@ function ServicesPrograms({ title1, title2, data }: programServicesSectionI) {
         {/* <div className="mt-16">
           <MetricsContainer />
         </div> */}
+
+        {/* slider navigation arrow */}
         <div className="w-full flex justify-between mt-10">
           <button
             className="h-10 w-10 rounded-full flex justify-center items-center bg-darkblue"

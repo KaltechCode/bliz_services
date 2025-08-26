@@ -14,7 +14,7 @@ function ServicesBanner({
       <div className="w-full h-full grid grid-cols-1 grid-rows-10 lg:grid-rows-1 lg:grid-cols-10">
         <div className="row-span-10 col-span-1 lg:col-span-9 lg:row-span-1 rounded-br-[50px]  overflow-hidden">
           <div
-            className="HeroEducation__banner-bg w-full h-full grid md:grid-cols-10 lg:grid-cols-9 items-center lg:items-end"
+            className="HeroEducation__banner-bg w-full h-full grid md:grid-cols-10 lg:grid-cols-9 items-center lg:items-end bg-bottom"
             style={{ backgroundImage: `url(${bannerImage})` }}
           >
             {/* tagged */}

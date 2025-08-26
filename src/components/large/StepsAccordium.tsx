@@ -4,6 +4,7 @@ import StepsAccordionItem from "../small/StepsAccordion";
 import Conatainer from "../layout/Conatainer";
 import { MdArrowForward } from "react-icons/md";
 import Link from "next/link";
+import bgImg from "../../../public/Image/about-us-bg.jpg";
 
 function StepsAccordium({
   data,
@@ -16,7 +17,11 @@ function StepsAccordium({
 }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   return (
-    <section className="h-auto py-20 md:min-h-[100vh] lg:py-12 lg:min-h-[100vh]  xl:py-24 3k:max-h-[800px] flex items-center bg-white">
+    <section
+      className="h-max py-16  md:min-h-[100vh] 3k:max-h-[800px] flex items-center relative top-0 left-0  bg-no-repeat bg-cover bg-center"
+      style={{ backgroundImage: `url(${bgImg.src})` }}
+    >
+      {" "}
       <Conatainer full={false}>
         <h2 className="session-title-text !text-black font-optima">
           Easy Steps to Apply.

@@ -18,9 +18,9 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:justify-between gap-6 w-full">
             {/* First Column */}
             <div className="mt-5 w-full md:col-start-1 md:col-end-2 lg:w-max">
-              <div className="">
+              <Link href={"/"} className="">
                 <Image src={img.src} alt="Bliaz" width={250} height={250} />
-              </div>
+              </Link>
 
               {/* contact details wrappers */}
               <div className="flex flex-col gap-4 md:gap-3 mt-7 md:mt-5">
@@ -28,19 +28,25 @@ const Footer = () => {
                   <span>
                     <FaEnvelopeOpenText />
                   </span>
-                  <span>{contact.email}</span>
+                  <Link href={`mailto:${contact.email}`} target="_blank">
+                    {contact.email}
+                  </Link>
                 </p>
                 <p className="flex items-center gap-2">
                   <span>
                     <MdOutlineLocalPhone />
                   </span>
-                  <span>{contact.tel1}</span>
+                  <Link href={`tel:${contact.tel1}`} target="_blank">
+                    {contact.tel1}
+                  </Link>
                 </p>
                 <p className="flex items-center gap-2">
                   <span>
                     <MdOutlineLocalPhone />
                   </span>
-                  <span>{contact.tel2}</span>
+                  <Link href={`tel:${contact.tel2}`} target="_blank">
+                    {contact.tel2}
+                  </Link>
                 </p>
               </div>
 
