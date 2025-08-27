@@ -132,13 +132,13 @@ export const homeServices = [
   {
     image: "/new/study-abroad-1.jpg",
     title: "Study Abroad",
-    url: "/education",
+    link: studyPageUrl,
     text: "We offer fantastic assistance if you wish to further your education overseas.",
   },
   {
     image: "/new/leadership-banner.jpg",
     title: "Work Abroad",
-    url: "/employment",
+    link: workPageUrl,
     text: "We’re familiar with the local job demand and work legislation.",
   },
   // {
