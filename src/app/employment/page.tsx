@@ -7,6 +7,7 @@ import Programs from "@/components/large/Programs";
 import ServicesPrograms from "@/components/large/Services.Programs";
 import StepsAccordium from "@/components/large/StepsAccordium";
 import {
+  applyWorkUrl,
   bannerData,
   educationServices,
   heroSeviceSection,
@@ -39,7 +40,7 @@ function page() {
         spanTitle="Bliz Services"
         data={educationServices}
       />
-      <StepsAccordium data={workSteps} className="" link="/apply/work" />
+      <StepsAccordium data={workSteps} className="" link={applyWorkUrl} />
       <FAQ data={workFAQ} />
       {/* <HomeContact /> */}
     </div>

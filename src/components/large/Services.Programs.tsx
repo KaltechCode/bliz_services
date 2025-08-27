@@ -39,20 +39,22 @@ function ServicesPrograms({ title1, title2, data }: programServicesSectionI) {
         </div> */}
 
         {/* slider navigation arrow */}
-        <div className="w-full flex justify-between mt-10">
-          <button
-            className="h-10 w-10 rounded-full flex justify-center items-center bg-darkblue"
-            onClick={handlePrev}
-          >
-            <UpwardArrow size={25} className="text-white rotate-180" />
-          </button>
-          <button
-            className=" h-10 w-10 rounded-full flex justify-center items-center bg-darkblue"
-            onClick={handleNext}
-          >
-            <UpwardArrow size={25} className="text-white" />
-          </button>
-        </div>
+        {data.length > 3 && (
+          <div className="w-full flex justify-between mt-10">
+            <button
+              className="h-10 w-10 rounded-full flex justify-center items-center bg-darkblue"
+              onClick={handlePrev}
+            >
+              <UpwardArrow size={25} className="text-white rotate-180" />
+            </button>
+            <button
+              className=" h-10 w-10 rounded-full flex justify-center items-center bg-darkblue"
+              onClick={handleNext}
+            >
+              <UpwardArrow size={25} className="text-white" />
+            </button>
+          </div>
+        )}
       </Conatainer>
     </section>
   );

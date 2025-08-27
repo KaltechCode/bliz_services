@@ -126,6 +126,14 @@ p,
   transition: ease-in-out 0.3s;
 }
 
+.primaryLink .svg {
+  color: #09092a;
+}
+
+.primaryLink .svg:hover {
+  color: #fff;
+}
+
 .container {
   @media (orientation: landscape) {
     @media (min-width: 768px) {

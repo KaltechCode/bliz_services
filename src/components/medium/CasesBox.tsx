@@ -5,10 +5,12 @@ function CasesBox({
   image,
   name,
   text,
+  link,
 }: {
   image: string;
   name: string;
   text: string;
+  link: string;
 }) {
   return (
     <div
@@ -21,7 +23,7 @@ function CasesBox({
         </div>
       </div>
       <div className="absolute bottom-4 left-5 z-20 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-[.5] ease-out">
-        <Primary text="Apply Now" url="/apply/study" />
+        <Primary text="Apply Now" url={link} />
       </div>
       <h2 className="absolute bottom-0 left-0 px-4 z-10 text-lg font-semibold text-white opacity-100 group-hover:opacity-0 w-full bg-darkblue/70 bg-opacity-10 py-2">
         {name}

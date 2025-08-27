@@ -12,6 +12,7 @@ import {
   educationServices,
   educationServicesProgram,
   heroSeviceSection,
+  applyStudyUrl,
 } from "@/constant/data";
 import React from "react";
 import ServicesBanner from "@/components/common/Services.Banner";
@@ -40,7 +41,7 @@ function Page() {
         spanTitle="Bliz Services"
         data={educationServices}
       />
-      <StepsAccordium data={educationSteps} className="" link="/apply/study" />
+      <StepsAccordium data={educationSteps} className="" link={applyStudyUrl} />
       <EducationQuoteBanner {...bannerData[1]} />
       <FAQ data={educationFAQ} />
     </div>

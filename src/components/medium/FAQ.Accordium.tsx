@@ -1,5 +1,5 @@
+import { Minus, Plus } from "@/constant/icons";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 
 const FAQAccordium = ({
   key,
@@ -59,11 +59,11 @@ const FAQAccordium = ({
               isOpen ? "bg-white" : "bg-darkblue"
             }`}
           >
-            <ArrowRight
-              className={` text-2xl lg:text-3xl transition-all duration-500 ${
-                isOpen ? "rotate-0 text-darkblue" : "-rotate-45 text-white"
-              }`}
-            />
+            {!isOpen ? (
+              <Plus className="text-2xl lg:text-3xl transition-all duration-500 text-white" />
+            ) : (
+              <Minus className="text-2xl lg:text-3xl transition-all duration-500 text-darkblue" />
+            )}
           </button>
         </div>
       </button>

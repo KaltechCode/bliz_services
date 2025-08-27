@@ -44,6 +44,22 @@ const SocialLinks: { Icon: IconType; name: string; url: string }[] = [
 export const linkToMoreTestimonial =
   "https://www.google.com/search?sca_esv=aed0d697877661b8&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E_NncRk6vLpqRfuVhINiUYS8hoWxRE64YqtxDt2piFfN_JAQSX_XCnSbta2l2xAVYV1skOjQNvYPF_Xsv39Mt7SJisZq&q=Bliz+Services+Reviews&sa=X&ved=2ahUKEwiFjLLIq5ePAxVIG9AFHVpNJEEQ0bkNegQINBAE&biw=1792&bih=841&dpr=1";
 
+export const BayStreet =
+  "https://www.google.com/maps/place/330+Bay+St.+%231400,+Toronto,+ON+M5H+2S8,+Canada/@43.650023,-79.383767,16z/data=!4m15!1m8!3m7!1s0x882b34cd4666f521:0x1a4e0649bc001003!2s330+Bay+St.+%231400,+Toronto,+ON+M5H+2S8,+Canada!3b1!8m2!3d43.6500191!4d-";
+
+export const Cameroon =
+  "https://www.google.com/maps/place/Bonduma+Spring/@4.155015,9.2648712,17.14z/data=!4m6!3m5!1s0x106133ad7b5d54c1:0x69a82b416e25fe1!8m2!3d4.1549898!4d9.2697507!16s%2Fg%2F11v5vy05yp?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D";
+
+export const contactURL = "";
+
+export const applyWorkUrl = "";
+
+export const applyStudyUrl = "";
+
+export const studyPageUrl = "";
+
+export const workPageUrl = "";
+
 export const location = [
   {
     street: "330 Bay Street",
@@ -282,13 +298,13 @@ export const educationServicesProgram = [
   },
   {
     image: "/new/united-state-education.jpg",
-    name: "United State",
+    name: "United States",
     text: "The prestige of earning a degree from a US-accredited university continues to make the US the top choice for overseas students. Higher education institutions in the US are renowned for having exceptionally high standards for the quality of their teaching methods, intellectual rigor, and learning experiences.",
   },
   {
     image: "/new/united-Kingdom-education.jpg",
     name: "United Kingdom",
-    text: "The prestige of earning a degree from a US-accredited university continues to make the US the top choice for overseas students. Higher education institutions in the US are renowned for having exceptionally high standards for the quality of their teaching methods, intellectual rigor, and learning experiences.",
+    text: "The UK is one of the world’s top destinations for international students. With globally recognized universities, world-class teaching, and a tradition of innovation, a UK degree opens doors anywhere in the world. From research excellence to life-changing experiences, studying in the UK isn’t just about education; it’s about building your future",
   },
   {
     image: "/new/Irish_Student.png",
@@ -304,17 +320,20 @@ export const educationServicesProgram = [
 
 export const workServicesProgram = [
   {
-    image: "/new/work-in-united-state.jpg",
+    link: applyStudyUrl,
+    image: "/new/Work_Abroad_US.webp",
     name: "United State",
     text: "Nearly all of the largest corporations in the world have operations in the USA, which means that there are plenty of jobs there. In America, you will have access to job chances that you won’t find anyplace else in the globe. Just one internship with a well-known company could transform your career",
   },
   {
+    link: applyStudyUrl,
     image: "/new/working-in-united-kingdom.avif",
     name: "United Kingdom",
     text: "You will be in excellent company as a foreign worker in the UK, which has numerous multinational communities. It’s not surprising that the UK is a popular choice for overseas graduates looking to launch their careers given the country’s diversified employment sectors, favorable working conditions, and abundance of employment chances.",
   },
   {
-    image: "/new/work-in-canada.jpg",
+    link: applyStudyUrl,
+    image: "/new/Work_Abroad_Canada.webp",
     name: "Canada",
     text: "It has a remarkable degree of economic independence thanks to its trustworthy and open public finance system. The banking and financial systems in Canada are robust. The nation provides its workforce with first-rate medical facilities, paid time off, and holidays that include parental and maternal leave.",
   },
@@ -490,7 +509,7 @@ export const bannerData: bannerDataI[] = [
   {
     quote: `"An Investment In Knowledge Pays The Best Interest."`,
     author: "Benjamin Franklin",
-    link: "/contact-us",
+    link: applyStudyUrl,
     center: false,
     text: "Studying abroad can provide the structure for students to build the necessary skills to be successful in life and give them an edge over their competition.",
     image: "",
@@ -498,7 +517,7 @@ export const bannerData: bannerDataI[] = [
   {
     quote: `Live as if you were to die tomorrow. Learn as if you were to live forever.`,
     author: "",
-    link: "/contact-us",
+    link: applyStudyUrl,
     center: true,
     text: "Obtain a worldwide perspective, meet people from all over the world, and explore new places—all while earning credits toward your degree.",
     image: "/new/explore-new-opportunities.avif",
@@ -506,7 +525,7 @@ export const bannerData: bannerDataI[] = [
   {
     quote: "You can explore different places!",
     author: "",
-    link: "/contact/us",
+    link: applyWorkUrl,
     center: true,
     text: "You have to come out of your comfort zone to experience life.",
     image: "/new/explore-new-opportunities.avif",
@@ -524,6 +543,7 @@ export const heroSeviceSection: heroServiceSectionI[] = [
       "Do you want to learn important life skills, and develop resilience?",
       "Do you want to take advantage of your chance to travel the world and get insight into your field of study from a new, global viewpoint?",
     ],
+    url: applyStudyUrl,
   },
   {
     tag: "WORK OVERSEAS",
@@ -535,6 +555,7 @@ export const heroSeviceSection: heroServiceSectionI[] = [
       "Do you want to work in an environment where you'll experience financial stability?",
       "Do you want to experience working overseas?",
     ],
+    url: applyWorkUrl,
   },
 ];
 

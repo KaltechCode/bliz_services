@@ -2,7 +2,14 @@
 import Image from "next/image";
 import React from "react";
 import IFooter from "../small/Icons/IFooter";
-import SocialLinks, { contact, location } from "@/constant/data";
+import SocialLinks, {
+  BayStreet,
+  Cameroon,
+  contact,
+  location,
+  studyPageUrl,
+  workPageUrl,
+} from "@/constant/data";
 import { FaEnvelopeOpenText } from "react-icons/fa";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
@@ -68,10 +75,14 @@ const Footer = () => {
                   <div className="bg-opacity-30 bg-white rounded-full p-2">
                     <MdOutlineLocationOn size={20} />
                   </div>
-                  <div className="">
-                    <p>{location[0].street}</p>
-                    <p>{location[0].state}</p>
-                    <p>{location[0].country}</p>
+                  <div className="w-[100%]">
+                    <Link href={BayStreet} target="_blank">
+                      <span>{location[0].street}</span>
+                      <br />
+                      <span>{location[0].state}</span>
+                      <br />
+                      <span>{location[0].country}</span>
+                    </Link>
                   </div>
                 </div>
                 <div className="flex gap-4 items-center w-[100%]">
@@ -79,9 +90,13 @@ const Footer = () => {
                     <MdOutlineLocationOn size={20} />
                   </div>
                   <div className="w-[100%]">
-                    <p>{location[1].street}</p>
-                    <p>{location[1].state}</p>
-                    <p>{location[1].country}</p>
+                    <Link href={Cameroon} target="_blank">
+                      <span>{location[1].street}</span>
+                      <br />
+                      <span>{location[1].state}</span>
+                      <br />
+                      <span>{location[1].country}</span>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -95,7 +110,7 @@ const Footer = () => {
               <ul className="space-y-1 text-gray-300">
                 <li>
                   <Link
-                    href={"/education"}
+                    href={workPageUrl}
                     className="text-white hover:text-pink cursor-pointer"
                   >
                     Study Abroad
@@ -103,7 +118,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href={"/employment"}
+                    href={studyPageUrl}
                     className="text-white hover:text-pink cursor-pointer"
                   >
                     Work Abroad

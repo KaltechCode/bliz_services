@@ -1,6 +1,8 @@
 import { Waving } from "@/constant/icons";
 import { heroServiceSectionI } from "@/constant/types";
 import Image from "next/image";
+import Primary from "../small/Buttons/Primary";
+import { applyWorkUrl } from "@/constant/data";
 
 function ServicesBanner({
   tag,
@@ -8,6 +10,7 @@ function ServicesBanner({
   bannerImage,
   title1,
   title2,
+  url,
 }: heroServiceSectionI) {
   return (
     <section className="h-[calc(100vh_-_160px)] lg:h-[calc(100vh_-_200px)]  relative left-0 right-0 bg-white herosection-landscape">
@@ -18,7 +21,7 @@ function ServicesBanner({
             style={{ backgroundImage: `url(${bannerImage})` }}
           >
             {/* tagged */}
-            <div className="w-[90%] h-max mx-auto md:w-[100%] md:col-start-2 md:col-end-10 lg:col-start-2 lg:col-end-9  3k:col-start-3 bg-[#0a193a] bg-opacity-60 px-4 rounded-2xl flex flex-col gap-7 3k:gap-10 3k:py-10 py-7 lg:mb-9">
+            <div className="w-[90%] h-max mx-auto md:w-[100%] md:col-start-2 md:col-end-10 lg:col-start-2 lg:col-end-9  3k:col-start-3 bg-[#0a193a] bg-opacity-60 px-4 rounded-2xl flex flex-col gap-7 lg:gap-5 3k:gap-10 3k:py-10 py-5 mb-3 3k:mb-10">
               <h3 className="flex items-center gap-4 text-base">
                 <span>
                   <span className="flex gap-4 items-center">
@@ -57,9 +60,13 @@ function ServicesBanner({
               </div>
 
               {/* Button container  */}
+              <div className="w-max">
+                <Primary text="Apply Now" url={url} />
+              </div>
             </div>
           </div>
         </div>
+
         <div className="lg:col-span-1 row-span-1 hidden lg:flex lg:row-span-10 justify-center">
           <Image
             src="/bliz-services.png"
