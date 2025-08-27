@@ -152,19 +152,19 @@ export const homeCases = [
   {
     image: "/new/couple-relocation.jpg",
     name: "John Olamide",
-    url: "/",
+    link: "/",
     text: "Study Abroad",
   },
   {
     image: "/new/relocation-abroad.jpg",
     name: "Olumide Elijah",
-    url: "/",
+    link: "/",
     text: "Relocation",
   },
   {
     image: "/new/hr-manager-welcoming-successful-candidate.jpg",
     name: "Okarfor Emmanuel",
-    url: "/",
+    link: "/",
     text: "Skills",
   },
 ];
