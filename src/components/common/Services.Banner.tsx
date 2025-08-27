@@ -2,7 +2,6 @@ import { Waving } from "@/constant/icons";
 import { heroServiceSectionI } from "@/constant/types";
 import Image from "next/image";
 import Primary from "../small/Buttons/Primary";
-import { applyWorkUrl } from "@/constant/data";
 
 function ServicesBanner({
   tag,
