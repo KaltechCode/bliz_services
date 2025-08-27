@@ -35,7 +35,7 @@ const HomeTestimonials = () => {
               <Link
                 href={linkToMoreTestimonial}
                 target="_blank"
-                className="w-max px-[16px] py-[8px] bg-gradient-to-r from-gray-300 to-gray-50 text-[#1717B0] font-normal text-base border border-[#1717B0] border-solid rounded-full flex gap-2 items-center group hover:bg-[#1717B0] hover:text-white hover:border-blue transition-all duration-500 h-max
+                className="w-max px-[16px] py-[8px] bg-gradient-to-r from-gray-300 to-gray-50 text-[#1717B0] font-normal text-base border border-[#1717B0] border-solid rounded-full flex gap-2 items-center group hover:bg-[#1717B0] hover:text-darkblue hover:border-darkblue transition-all duration-500 h-max
     "
               >
                 View More
