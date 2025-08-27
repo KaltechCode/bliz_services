@@ -292,26 +292,31 @@ export default SocialLinks;
 
 export const educationServicesProgram = [
   {
+    link: applyStudyUrl,
     image: "/new/canada-education.jpg",
     name: "Canada",
     text: "Canada, which is home to some of the best universities in the world, is emerging as a model for high-quality graduate education and research. In the QS and Times Higher Education global university rankings, respectively, 26 and 27, Canadian universities are ranked. Academic research in a variety of sectors, including technology, medicine, agriculture, telecommunications, and environmental science, is also supported and encouraged by the Canadian government. ",
   },
   {
+    link: applyStudyUrl,
     image: "/new/united-state-education.jpg",
     name: "United States",
     text: "The prestige of earning a degree from a US-accredited university continues to make the US the top choice for overseas students. Higher education institutions in the US are renowned for having exceptionally high standards for the quality of their teaching methods, intellectual rigor, and learning experiences.",
   },
   {
+    link: applyStudyUrl,
     image: "/new/united-Kingdom-education.jpg",
     name: "United Kingdom",
     text: "The UK is one of the world’s top destinations for international students. With globally recognized universities, world-class teaching, and a tradition of innovation, a UK degree opens doors anywhere in the world. From research excellence to life-changing experiences, studying in the UK isn’t just about education; it’s about building your future",
   },
   {
+    link: applyStudyUrl,
     image: "/new/Irish_Student.png",
     name: "Ireland",
     text: "Ireland has become one of the leading destinations for international students, combining world-class universities with a rich academic tradition. Known for innovative teaching, research excellence, and globally respected degrees, Irish institutions offer students not only an outstanding education but also a welcoming, vibrant environment that prepares them for success anywhere in the world.",
   },
   {
+    link: applyStudyUrl,
     image: "/new/EU_Student.png",
     name: "Schengen",
     text: "The Schengen region is a top choice for international students, offering world-class universities, affordable tuition, and globally recognized degrees. With career opportunities and the freedom to travel across 27 countries on one visa, students enjoy the perfect balance of education, opportunity, and adventure.",
