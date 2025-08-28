@@ -76,8 +76,8 @@ export const location = [
 
 export const contact: { email: string; tel1: string; tel2: string } = {
   email: "info@blizservices.com",
-  tel1: "+23 767 6976 385",
-  tel2: "+23 767 6976 385",
+  tel1: "+(237) 676 976 385",
+  tel2: "+(1) 705 500 5203",
 };
 
 export const headerAddress = [
@@ -87,7 +87,7 @@ export const headerAddress = [
     link: "mailto:info@blizservices.com",
   },
   {
-    text: "+23 767 6976 385",
+    text: "+(237) 676 976 385",
     label: "Call Us",
     link: "tel:+237676976385",
   },

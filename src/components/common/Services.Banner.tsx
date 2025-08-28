@@ -1,7 +1,9 @@
+"use client";
 import { Waving } from "@/constant/icons";
 import { heroServiceSectionI } from "@/constant/types";
 import Image from "next/image";
 import Primary from "../small/Buttons/Primary";
+import useMobile from "@/hooks/useMobile";
 
 function ServicesBanner({
   tag,
@@ -11,13 +13,18 @@ function ServicesBanner({
   title2,
   url,
 }: heroServiceSectionI) {
+  const isDesktop = useMobile("(min-width: 761px)");
   return (
     <section className="h-[calc(100vh_-_160px)] lg:h-[calc(100vh_-_200px)]  relative left-0 right-0 bg-white herosection-landscape">
       <div className="w-full h-full grid grid-cols-1 grid-rows-10 lg:grid-rows-1 lg:grid-cols-10">
         <div className="row-span-10 col-span-1 lg:col-span-9 lg:row-span-1 rounded-br-[50px]  overflow-hidden">
           <div
             className="HeroEducation__banner-bg w-full h-full grid md:grid-cols-10 lg:grid-cols-9 items-center lg:items-end bg-bottom"
-            style={{ backgroundImage: `url(${bannerImage})` }}
+            style={{
+              backgroundImage: `url(${
+                isDesktop ? bannerImage : "/new/Work_abroad_Mobile.webp"
+              })`,
+            }}
           >
             {/* tagged */}
             <div className="w-[90%] h-max mx-auto md:w-[100%] md:col-start-2 md:col-end-10 lg:col-start-2 lg:col-end-9  3k:col-start-3 bg-[#0a193a] bg-opacity-60 px-4 rounded-2xl flex flex-col gap-7 lg:gap-5 3k:gap-10 3k:py-10 py-5 mb-3 3k:mb-10">

@@ -111,7 +111,7 @@ function ContactForm() {
 
         <button
           type="submit"
-          className="bg-blue rounded-full px-10 py-3 text-white disabled:opacity-60"
+          className="px-[16px] py-[8px] bg-pink border border-pink !text-darkblue border-solid rounded-full flex gap-2 items-center group/link is-primary hover:!bg-transparent hover:!text-darkblue transition-all duration-500 h-max primaryLink"
           disabled={isSubmitting}
         >
           {isSubmitting ? "Sending..." : "Send a Message"}

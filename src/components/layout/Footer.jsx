@@ -51,9 +51,9 @@ const Footer = () => {
                   <span>
                     <MdOutlineLocalPhone />
                   </span>
-                  {/* <Link href={`tel:${contact.tel2}`} target="_blank">
+                  <Link href={`tel:${contact.tel2}`} target="_blank">
                     {contact.tel2}
-                  </Link> */}
+                  </Link>
                 </p>
               </div>
 
