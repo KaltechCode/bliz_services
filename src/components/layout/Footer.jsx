@@ -51,9 +51,9 @@ const Footer = () => {
                   <span>
                     <MdOutlineLocalPhone />
                   </span>
-                  <Link href={`tel:${contact.tel2}`} target="_blank">
+                  {/* <Link href={`tel:${contact.tel2}`} target="_blank">
                     {contact.tel2}
-                  </Link>
+                  </Link> */}
                 </p>
               </div>
 
@@ -110,7 +110,7 @@ const Footer = () => {
               <ul className="space-y-1 text-gray-300">
                 <li>
                   <Link
-                    href={workPageUrl}
+                    href={studyPageUrl}
                     className="text-white hover:text-pink cursor-pointer"
                   >
                     Study Abroad
@@ -118,7 +118,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href={studyPageUrl}
+                    href={workPageUrl}
                     className="text-white hover:text-pink cursor-pointer"
                   >
                     Work Abroad

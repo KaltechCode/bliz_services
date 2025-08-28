@@ -1,24 +1,30 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function NavbarLinks() {
   // const [dropdown, setDropdown] = useState(false);
+  const pathname = usePathname();
+
+  const getLinkClassName = (href: string) => {
+    return `link ${pathname === href ? "!text-[#a6d8fd]" : ""}`;
+  };
 
   return (
     <ul className="hidden xl:flex justify-center items-center gap-4 h-[100%] col-span-3">
       <li>
-        <Link href={"/"} className="link">
+        <Link href="/" className={getLinkClassName("/")}>
           HOME
         </Link>
       </li>
       <li>
-        <Link href={"/education"} className="link">
+        <Link href="/education" className={getLinkClassName("/education")}>
           STUDY ABROAD
         </Link>
       </li>
       <li>
-        <Link href={"/employment"} className="link">
+        <Link href="/employment" className={getLinkClassName("/employment")}>
           WORK ABROAD
         </Link>
       </li>
