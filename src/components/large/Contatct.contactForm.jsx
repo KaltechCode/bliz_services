@@ -2,10 +2,6 @@ import React from "react";
 import bgImg from "../../assets/images/contact-bg.png";
 import ContactForm from "../medium/Form/ContactForm";
 import Conatainer from "../layout/Conatainer";
-import ContactInfo from "../medium/Contact.Info";
-
-import Image from "next/image";
-import { Phone, Send, Location } from "@/constant/icons";
 
 function ContactContactForm() {
   return (

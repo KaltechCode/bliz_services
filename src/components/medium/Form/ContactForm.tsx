@@ -41,7 +41,7 @@ function ContactForm() {
       setEmail("");
       setMessage("");
       setStatus("success");
-    } catch (error) {
+    } catch {
       setStatus("error");
     } finally {
       setIsSubmitting(false);
