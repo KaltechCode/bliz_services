@@ -493,20 +493,20 @@ function StudyApplicationForm() {
           <label className={labelClass}>Terms and Conditions</label>
           <div className="bg-gray-50 p-4 rounded-lg mt-2">
             <p className="text-sm text-gray-700 mb-4">
-              I understand that this application is for admission only for the
+              `I understand that this application is for admission only for the
               term indicated. I agree that I am bound by the prospective
-              institution's regulations concerning application deadlines and
-              admission requirements. I agree to the release of any transcripts
-              and test scores to this institution. I certify that this
-              information is complete and accurate. I understand that making
-              false or fraudulent statements within this application will result
-              in denial of admission and invalidation of credit or degrees
-              earned. If admitted, I agree to abide by the policies of the Board
-              of Regents and the rules and regulations of the educational
-              institution. Should any information change prior to my entry into
-              the institution, I will notify Bliz Services. I understand that
-              the service fee I submit with this application is a non-refundable
-              fee.
+              institution&apos;s regulations concerning application deadlines
+              and admission requirements. I agree to the release of any
+              transcripts and test scores to this institution. I certify that
+              this information is complete and accurate. I understand that
+              making false or fraudulent statements within this application will
+              result in denial of admission and invalidation of credit or
+              degrees earned. If admitted, I agree to abide by the policies of
+              the Board of Regents and the rules and regulations of the
+              educational institution. Should any information change prior to my
+              entry into the institution, I will notify Bliz Services. I
+              understand that the service fee I submit with this application is
+              a non-refundable fee.
             </p>
             <label className="flex items-center gap-2">
               <input
@@ -536,7 +536,7 @@ function StudyApplicationForm() {
         {/* Status Messages */}
         {status === "success" && (
           <p className="w-full text-green-600 text-sm mt-2">
-            Thanks! Your study application has been submitted successfully.
+            {`Thanks! Your study application has been submitted successfully.`}
           </p>
         )}
         {status === "error" && (

@@ -643,7 +643,7 @@ function WorkAbroadApplicationForm() {
         <div className="bg-gray-50 p-4 rounded-lg mt-2">
           <p className="text-sm text-gray-700 mb-4">
             I understand that this application is for work opportunities abroad
-            only. I agree that I am bound by the prospective employer's
+            only. I agree that I am bound by the prospective employer&apos;s
             regulations concerning application deadlines and employment
             requirements. I certify that this information is complete and
             accurate. I understand that making false or fraudulent statements

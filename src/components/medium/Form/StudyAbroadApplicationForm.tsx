@@ -602,7 +602,7 @@ function StudyAbroadApplicationForm() {
           <p className="text-sm text-gray-700 mb-4">
             I understand that this application is for admission only for the
             term indicated. I agree that I am bound by the prospective
-            institution's regulations concerning application deadlines and
+            institution&apos;s regulations concerning application deadlines and
             admission requirements. I certify that this information is complete
             and accurate. I understand that making false or fraudulent
             statements within this application will result in denial of
