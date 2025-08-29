@@ -3,6 +3,7 @@ import HomeAboutImage from "../small/HomeAboutImage";
 import TransparentBlue from "../small/Buttons/TransparentBlue";
 import AboutParagrah from "../medium/AboutParagrah";
 import bgImg from "../../../public/Image/about-us-bg.jpg";
+import { contactURL } from "@/constant/data";
 
 const HomeAbout = () => {
   return (
@@ -44,7 +45,7 @@ const HomeAbout = () => {
 
           <div className="bg-white py-1 mt-5 rounded-full md:flex-row w-max lg:px-2 self-start">
             <div className="rounded-xl px-4 py-3 flex">
-              <TransparentBlue text="Apply Now" url="/contact-us" />
+              <TransparentBlue text="Contact Us" url={contactURL} />
             </div>
 
             {/* Rating */}

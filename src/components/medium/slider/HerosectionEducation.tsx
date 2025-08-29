@@ -2,6 +2,7 @@ import { Waving } from "@/constant/icons";
 import React from "react";
 import { motion } from "framer-motion";
 import Primary from "@/components/small/Buttons/Primary";
+import { applyStudyUrl } from "@/constant/data";
 
 function HerosectionEducation() {
   return (
@@ -131,7 +132,7 @@ function HerosectionEducation() {
               },
             }}
           >
-            <Primary text="Apply Now" url="/contact-us" />
+            <Primary text="Apply Now" url={applyStudyUrl} />
             {/* <Transparent text="More Details" url="/education" /> */}
           </motion.div>
         </motion.div>

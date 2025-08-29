@@ -4,6 +4,7 @@ import bgImg from "../../../public/Image/Circular_bg.png";
 import TransparentBlue from "../small/Buttons/TransparentBlue";
 import HomeProgressContainer from "../medium/HomeProgressContainer";
 import Image from "next/image";
+import { applyStudyUrl } from "@/constant/data";
 
 const HomeWhy = () => {
   return (
@@ -43,7 +44,7 @@ const HomeWhy = () => {
               <HomeProgressContainer />
             </div>
             <div className="mt-10">
-              <TransparentBlue url="/contact-us" text="Apply Now" />
+              <TransparentBlue url={applyStudyUrl} text="Apply Now" />
             </div>
           </div>
 

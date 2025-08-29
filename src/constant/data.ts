@@ -51,11 +51,11 @@ export const BayStreet =
 export const Cameroon =
   "https://www.google.com/maps/place/Bonduma+Spring/@4.155015,9.2648712,17.14z/data=!4m6!3m5!1s0x106133ad7b5d54c1:0x69a82b416e25fe1!8m2!3d4.1549898!4d9.2697507!16s%2Fg%2F11v5vy05yp?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D";
 
-export const contactURL = "";
+export const contactURL = `${baseUrl()}/contact-us`;
 
-export const applyWorkUrl = "";
+export const applyWorkUrl = `${baseUrl()}/apply/work-abroad`;
 
-export const applyStudyUrl = "";
+export const applyStudyUrl = `${baseUrl()}/apply/study-abroad`;
 
 export const studyPageUrl = `${baseUrl()}/education`;
 
@@ -328,19 +328,19 @@ export const educationServicesProgram = [
 
 export const workServicesProgram = [
   {
-    link: applyStudyUrl,
+    link: applyWorkUrl,
     image: "/new/Work_Abroad_US.webp",
     name: "United State",
     text: "Nearly all of the largest corporations in the world have operations in the USA, which means that there are plenty of jobs there. In America, you will have access to job chances that you won’t find anyplace else in the globe. Just one internship with a well-known company could transform your career",
   },
   {
-    link: applyStudyUrl,
+    link: applyWorkUrl,
     image: "/new/working-in-united-kingdom.avif",
     name: "United Kingdom",
     text: "You will be in excellent company as a foreign worker in the UK, which has numerous multinational communities. It’s not surprising that the UK is a popular choice for overseas graduates looking to launch their careers given the country’s diversified employment sectors, favorable working conditions, and abundance of employment chances.",
   },
   {
-    link: applyStudyUrl,
+    link: applyWorkUrl,
     image: "/new/Work_Abroad_Canada.webp",
     name: "Canada",
     text: "It has a remarkable degree of economic independence thanks to its trustworthy and open public finance system. The banking and financial systems in Canada are robust. The nation provides its workforce with first-rate medical facilities, paid time off, and holidays that include parental and maternal leave.",
@@ -517,7 +517,7 @@ export const bannerData: bannerDataI[] = [
   {
     quote: `"An Investment In Knowledge Pays The Best Interest."`,
     author: "Benjamin Franklin",
-    link: applyStudyUrl,
+    link: contactURL,
     center: false,
     text: "Studying abroad can provide the structure for students to build the necessary skills to be successful in life and give them an edge over their competition.",
     image: "",
@@ -525,7 +525,7 @@ export const bannerData: bannerDataI[] = [
   {
     quote: `Live as if you were to die tomorrow. Learn as if you were to live forever.`,
     author: "",
-    link: applyStudyUrl,
+    link: contactURL,
     center: true,
     text: "Obtain a worldwide perspective, meet people from all over the world, and explore new places—all while earning credits toward your degree.",
     image: "/new/explore-new-opportunities.avif",
@@ -533,7 +533,7 @@ export const bannerData: bannerDataI[] = [
   {
     quote: "You can explore different places!",
     author: "",
-    link: applyWorkUrl,
+    link: contactURL,
     center: true,
     text: "You have to come out of your comfort zone to experience life.",
     image: "/new/explore-new-opportunities.avif",

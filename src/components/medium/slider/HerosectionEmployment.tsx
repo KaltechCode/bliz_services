@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import HerosectionTopClipy from "@/components/small/HerosectionTopClipy";
 import HerosectionBottomClipy from "@/components/small/HerosectionBottomClipy";
 import Primary from "@/components/small/Buttons/Primary";
+import { applyWorkUrl } from "@/constant/data";
 
 function HerosectionEmployment() {
   return (
@@ -137,7 +138,7 @@ function HerosectionEmployment() {
             }}
             className="flex gap-4"
           >
-            <Primary text="Apply Now" url="/contact-us" />
+            <Primary text="Apply Now" url={applyWorkUrl} />
             {/* <Transparent text="More Details" url="/employment" /> */}
           </motion.div>
         </motion.div>
