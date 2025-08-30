@@ -1,6 +1,5 @@
 "use client";
 import { studyPageUrl } from "@/constant/data";
-import { baseUrl } from "@/helpers/baseUrl";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
@@ -328,7 +327,7 @@ function StudyAbroadApplicationForm() {
       setStatus("success");
       setCurrentStep(1);
 
-      route.replace(baseUrl() + studyPageUrl);
+      setTimeout(() => route.replace(studyPageUrl), 1000);
     } catch (err) {
       console.error("An error occurred:", err);
       setStatus("error");

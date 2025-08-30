@@ -1,6 +1,5 @@
 "use client";
 import { qualificationList, workPageUrl } from "@/constant/data";
-import { baseUrl } from "@/helpers/baseUrl";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
@@ -327,8 +326,6 @@ function WorkAbroadApplicationForm() {
         }
       );
 
-      setTimeout(() => route.replace(baseUrl() + workPageUrl), 1000);
-
       // Optimistically assume success when using no-cors
       setFirstName("");
       setLastName("");
@@ -346,6 +343,7 @@ function WorkAbroadApplicationForm() {
       setTermsAccepted(false);
       setStatus("success");
       setCurrentStep(1);
+      setTimeout(() => route.replace(workPageUrl), 1000);
     } catch {
       setStatus("error");
     } finally {

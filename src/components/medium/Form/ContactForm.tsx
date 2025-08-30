@@ -1,6 +1,5 @@
 "use client";
 import { contactURL } from "@/constant/data";
-import { baseUrl } from "@/helpers/baseUrl";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
@@ -47,7 +46,7 @@ function ContactForm() {
       setMessage("");
       setStatus("success");
 
-      route.replace(baseUrl() + contactURL);
+      setTimeout(() => route.replace(contactURL), 1000);
     } catch {
       setStatus("error");
     } finally {
