@@ -74,6 +74,12 @@ export const location = [
   },
 ];
 
+export const qualificationList = [
+  "Associate Degree",
+  "Bachelor Degree",
+  "Post Graduate Degree",
+];
+
 export const contact: { email: string; tel1: string; tel2: string } = {
   email: "info@blizservices.com",
   tel1: "+(237) 676 976 385",

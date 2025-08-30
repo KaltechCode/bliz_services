@@ -1,4 +1,5 @@
 "use client";
+import { qualificationList } from "@/constant/data";
 import React, { useState } from "react";
 
 function WorkAbroadApplicationForm() {
@@ -22,18 +23,29 @@ function WorkAbroadApplicationForm() {
   const [workCountry, setWorkCountry] = useState("");
   const [jobTitle, setJobTitle] = useState("");
   const [experience, setExperience] = useState("");
-  const [education, setEducation] = useState("");
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<null | "success" | "error">(null);
 
-  const workCountries = [
-    "Canada",
-    "United States",
-    "United Kingdom",
-    "Ireland",
-    "Europe",
-  ];
+  const workCountries = ["Canada", "United States", "United Kingdom"];
+
+  const [selectedQualifications, setSelectedQualifications] = useState<
+    string[]
+  >([]);
+
+  // Function to handle changes to the checkboxes
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, checked } = e.target;
+    setSelectedQualifications((prevQualifications) => {
+      if (checked) {
+        // Add the qualification to the array if it's checked
+        return [...prevQualifications, value];
+      } else {
+        // Remove the qualification from the array if it's unchecked
+        return prevQualifications.filter((q) => q !== value);
+      }
+    });
+  };
 
   const worldCountries = [
     "-Select-",
@@ -277,32 +289,43 @@ function WorkAbroadApplicationForm() {
     setStatus(null);
 
     try {
-      const formData = new FormData();
-      formData.append("Name_First", firstName);
-      formData.append("Name_Last", lastName);
-      formData.append("PhoneNumber_countrycode", phoneNumber);
-      formData.append("Email", email);
-      formData.append("Address_AddressLine1", addressLine1);
-      formData.append("Address_AddressLine2", addressLine2);
-      formData.append("Address_City", city);
-      formData.append("Address_Region", region);
-      formData.append("Address_ZipCode", zipCode);
-      formData.append("Address_Country", country);
-      formData.append("Radio", workCountry);
-      formData.append("SingleLine", jobTitle);
-      formData.append("Experience", experience);
-      formData.append("Education", education);
-      formData.append("TermsConditions", termsAccepted.toString());
+      const formData = {
+        Name: {
+          Name_First: firstName,
+          Name_Last: lastName,
+        },
+        PhoneNumber: phoneNumber,
+        Email: email,
+        Address: {
+          Address_AddressLine1: addressLine1,
+          Address_AddressLine2: addressLine2,
+          Address_City: city,
+          Address_Region: region,
+          Address_ZipCode: zipCode,
+          Address_Country: country,
+        },
+        Radio: workCountry,
+        MultipleChoice: selectedQualifications,
+        SingleLine: jobTitle,
+        MultiLine: experience,
+        TermsConditions: termsAccepted.toString(),
+      };
 
-      await fetch(
-        "https://forms.zohopublic.com/blizservices1/form/WorkAbroadApplication/formperma/your-form-id-here/htmlRecords/submit",
+      const response = await fetch(
+        "https://forms.zohopublic.com/blizservices1/form/WorkApplication/formperma/U_Vdq2TNdcY8QFV78g00sTltzgCWE5ceGoKBYLgC2Gs/records",
         {
+          headers: {
+            "Content-Type": "application/json",
+          },
           method: "POST",
-          body: formData,
+          body: JSON.stringify(formData),
           mode: "no-cors",
         }
       );
 
+      if (response.ok) {
+        setTimeout(() => window.location.replace("/"), 1000);
+      }
       // Optimistically assume success when using no-cors
       setFirstName("");
       setLastName("");
@@ -317,7 +340,6 @@ function WorkAbroadApplicationForm() {
       setWorkCountry("");
       setJobTitle("");
       setExperience("");
-      setEducation("");
       setTermsAccepted(false);
       setStatus("success");
       setCurrentStep(1);
@@ -590,11 +612,34 @@ function WorkAbroadApplicationForm() {
           ))}
         </div>
       </div>
+      {/* qualification */}
+      <div className="w-full">
+        <label className={labelClass}>
+          Educational Qualification <span className="text-red-500">*</span>
+        </label>
+        <div className="flex flex-col flex-wrap gap-3 mt-2">
+          {qualificationList.map((qualification) => (
+            <div key={qualification} className="flex items-center gap-2">
+              <label className="flex items-center gap-2 text-gray-700 cursor-pointer">
+                <input
+                  type="checkbox"
+                  name="qualifications"
+                  value={qualification}
+                  checked={selectedQualifications.includes(qualification)}
+                  onChange={handleCheckboxChange}
+                  className="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500"
+                />
+                <span>{qualification}</span>
+              </label>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* Job Title */}
       <div className={fullWidthClass}>
         <label className={labelClass}>
-          What is your desired job title?{" "}
+          What type of job are you looking for?{" "}
           <span className="text-red-500">*</span>
         </label>
         <input
@@ -613,7 +658,7 @@ function WorkAbroadApplicationForm() {
       <div className={fullWidthClass}>
         <label className={labelClass}>Work Experience</label>
         <textarea
-          name="Experience"
+          name="MultiLine"
           maxLength={1000}
           placeholder="Describe your relevant work experience"
           className="px-3 bg-gray-100 w-full focus:outline-pink py-2 rounded-sm min-h-[100px]"
@@ -623,17 +668,17 @@ function WorkAbroadApplicationForm() {
       </div>
 
       {/* Education */}
-      <div className={fullWidthClass}>
+      {/* <div className={fullWidthClass}>
         <label className={labelClass}>Education & Qualifications</label>
         <textarea
-          name="Education"
+          name="MultiLine"
           maxLength={1000}
           placeholder="List your educational background and qualifications"
           className="px-3 bg-gray-100 w-full focus:outline-pink py-2 rounded-sm min-h-[100px]"
           value={education}
           onChange={(e) => setEducation(e.target.value)}
         />
-      </div>
+      </div> */}
 
       {/* Terms and Conditions */}
       <div className="w-full">
@@ -642,17 +687,18 @@ function WorkAbroadApplicationForm() {
         </label>
         <div className="bg-gray-50 p-4 rounded-lg mt-2">
           <p className="text-sm text-gray-700 mb-4">
-            I understand that this application is for work opportunities abroad
-            only. I agree that I am bound by the prospective employer&apos;s
-            regulations concerning application deadlines and employment
-            requirements. I certify that this information is complete and
-            accurate. I understand that making false or fraudulent statements
-            within this application will result in denial of employment and
-            invalidation of any work permits or visas obtained. If employed, I
-            agree to abide by the policies of the employer and the rules and
-            regulations of the host country. Should any information change prior
-            to my employment, I will notify Bliz Services. I understand that the
-            service fee I submit with this application is a non-refundable fee.
+            I understand that this application is for working overseas only for
+            a given period. I agree that I am bound by the prospective
+            employer&apos;s regulations concerning work application deadlines
+            and neccessary work requirements. I agree to the release of any
+            certifications, transcripts and test scores to this Bliz services. I
+            certify that this information is complete and accurate. I understand
+            that making false or fraudulent statements within this application
+            will result in denial of a contract letter. If contracted, I agree
+            to abide by the policies of the prospective employer. Should any
+            information change prior to my contract letter provided, I will
+            notify Bliz Services. I understand that the service fee I submit
+            with this application is a non-refundable fee.
           </p>
           <label className="flex items-center gap-2">
             <input

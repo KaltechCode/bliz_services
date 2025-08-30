@@ -274,29 +274,41 @@ function StudyAbroadApplicationForm() {
     setStatus(null);
 
     try {
-      const formData = new FormData();
-      formData.append("Name_First", firstName);
-      formData.append("Name_Last", lastName);
-      formData.append("PhoneNumber_countrycode", phoneNumber);
-      formData.append("Email", email);
-      formData.append("Address_AddressLine1", addressLine1);
-      formData.append("Address_AddressLine2", addressLine2);
-      formData.append("Address_City", city);
-      formData.append("Address_Region", region);
-      formData.append("Address_ZipCode", zipCode);
-      formData.append("Address_Country", country);
-      formData.append("Radio", studyCountry);
-      formData.append("SingleLine", plannedMajor);
-      formData.append("TermsConditions", termsAccepted.toString());
+      const formData = {
+        Name: {
+          Name_First: firstName,
+          Name_Last: lastName,
+        },
+        PhoneNumber: phoneNumber,
+        Email: email,
+        Address: {
+          Address_AddressLine1: addressLine1,
+          Address_AddressLine2: addressLine2,
+          Address_City: city,
+          Address_Region: region,
+          Address_ZipCode: zipCode,
+          Address_Country: country,
+        },
+        Radio: studyCountry,
+        SingleLine: plannedMajor,
+        TermsConditions: termsAccepted.toString(),
+      };
 
-      await fetch(
+      const response = await fetch(
         "https://forms.zohopublic.com/blizservices1/form/StudyApplication/formperma/8F_MbU-pa5aWXvb6PgwI7BQrkVI_FtPi0ReqxIj1ehY/htmlRecords/submit",
         {
           method: "POST",
-          body: formData,
+          body: JSON.stringify(formData),
+          headers: {
+            "Content-Type": "application/json",
+          },
           mode: "no-cors",
         }
       );
+
+      if (response.ok) {
+        setTimeout(() => window.location.replace("/"), 1500);
+      }
 
       setFirstName("");
       setLastName("");
