@@ -300,7 +300,7 @@ function StudyAbroadApplicationForm() {
         REFERRER_NAME: "https://accounts.zoho.com/",
       };
 
-      const response = await fetch(
+      await fetch(
         "https://forms.zohopublic.com/blizservices1/form/StudyApplication/formperma/vP1WDPI-6V3p95w9MiNr46qpsHou4AgUdDUq8X2J7Vc/records",
         {
           headers: {

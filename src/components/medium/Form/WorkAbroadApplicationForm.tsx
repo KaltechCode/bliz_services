@@ -315,7 +315,7 @@ function WorkAbroadApplicationForm() {
         TermsConditions: termsAccepted.toString(),
       };
 
-      const response = await fetch(
+      await fetch(
         "https://forms.zohopublic.com/blizservices1/form/WorkApplication/formperma/U_Vdq2TNdcY8QFV78g00sTltzgCWE5ceGoKBYLgC2Gs/records",
         {
           headers: {
