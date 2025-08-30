@@ -1,5 +1,7 @@
 "use client";
-import { qualificationList } from "@/constant/data";
+import { qualificationList, workPageUrl } from "@/constant/data";
+import { baseUrl } from "@/helpers/baseUrl";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 function WorkAbroadApplicationForm() {
@@ -8,6 +10,8 @@ function WorkAbroadApplicationForm() {
     "w-full h-[40px] px-3 bg-gray-100 focus:outline-pink rounded-sm";
   const labelClass = "block text-sm mb-1 text-gray-700";
   const fullWidthClass = "w-full rounded-lg";
+
+  const route = useRouter();
 
   const [currentStep, setCurrentStep] = useState(1);
   const [firstName, setFirstName] = useState("");
@@ -323,9 +327,8 @@ function WorkAbroadApplicationForm() {
         }
       );
 
-      if (response.ok) {
-        setTimeout(() => window.location.replace("/"), 1000);
-      }
+      setTimeout(() => route.replace(baseUrl() + workPageUrl), 1000);
+
       // Optimistically assume success when using no-cors
       setFirstName("");
       setLastName("");

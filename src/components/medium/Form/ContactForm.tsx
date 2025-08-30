@@ -1,4 +1,7 @@
 "use client";
+import { contactURL } from "@/constant/data";
+import { baseUrl } from "@/helpers/baseUrl";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 function ContactForm() {
@@ -13,6 +16,8 @@ function ContactForm() {
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<null | "success" | "error">(null);
+
+  const route = useRouter();
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -41,6 +46,8 @@ function ContactForm() {
       setEmail("");
       setMessage("");
       setStatus("success");
+
+      route.replace(baseUrl() + contactURL);
     } catch {
       setStatus("error");
     } finally {

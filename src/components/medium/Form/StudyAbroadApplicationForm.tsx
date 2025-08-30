@@ -1,4 +1,7 @@
 "use client";
+import { studyPageUrl } from "@/constant/data";
+import { baseUrl } from "@/helpers/baseUrl";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 function StudyAbroadApplicationForm() {
@@ -7,6 +10,8 @@ function StudyAbroadApplicationForm() {
     "w-full h-[40px] px-3 bg-gray-100 focus:outline-pink rounded-sm";
   const labelClass = "block text-sm mb-1 text-gray-700";
   const fullWidthClass = "w-full rounded-lg";
+
+  const route = useRouter();
 
   const [currentStep, setCurrentStep] = useState(1);
   const [firstName, setFirstName] = useState("");
@@ -292,23 +297,20 @@ function StudyAbroadApplicationForm() {
         Radio: studyCountry,
         SingleLine: plannedMajor,
         TermsConditions: termsAccepted.toString(),
+        REFERRER_NAME: "https://accounts.zoho.com/",
       };
 
       const response = await fetch(
-        "https://forms.zohopublic.com/blizservices1/form/StudyApplication/formperma/8F_MbU-pa5aWXvb6PgwI7BQrkVI_FtPi0ReqxIj1ehY/htmlRecords/submit",
+        "https://forms.zohopublic.com/blizservices1/form/StudyApplication/formperma/vP1WDPI-6V3p95w9MiNr46qpsHou4AgUdDUq8X2J7Vc/records",
         {
-          method: "POST",
-          body: JSON.stringify(formData),
           headers: {
             "Content-Type": "application/json",
           },
+          method: "POST",
+          body: JSON.stringify(formData),
           mode: "no-cors",
         }
       );
-
-      if (response.ok) {
-        setTimeout(() => window.location.replace("/"), 1500);
-      }
 
       setFirstName("");
       setLastName("");
@@ -325,7 +327,10 @@ function StudyAbroadApplicationForm() {
       setTermsAccepted(false);
       setStatus("success");
       setCurrentStep(1);
-    } catch {
+
+      route.replace(baseUrl() + studyPageUrl);
+    } catch (err) {
+      console.error("An error occurred:", err);
       setStatus("error");
     } finally {
       setIsSubmitting(false);
