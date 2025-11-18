@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Menu } from "@/constant/icons";
 import Transparent from "@/components/small/Buttons/Transparent";
 import Sidebar from "./Sidebar";
-import Logo from "../../../assets/images/logo.png";
 import Link from "next/link";
 function SmallScreen() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +17,7 @@ function SmallScreen() {
     setDropdown(!dropdown);
   };
 
-  const clSmallHeaderContainer = `mx-auto h-auto bg-transparent header__logo-bg relative left-0 top-0 lg:hidden `;
+  const clSmallHeaderContainer = `mx-auto h-auto bg-transparent header__logo-bg relative left-0 top-0 md:hidden `;
   const clLogoWrapper = `w-[95vw] lg:w-[95vw]  h-[100px] mx-auto flex justify-center items-center border-b border-white`;
   const clLogoInnerWrapper = `grid place-items-center`;
   const clSmContentContianer = `w-full h-[70px] bg-darkBlue`;
@@ -33,7 +32,12 @@ function SmallScreen() {
           {/* small screen modal logo wrapper */}
           <div className={clLogoInnerWrapper}>
             <Link href={"/"}>
-              <Image src={Logo} alt="Bliaz" width={250} height={250} />
+              <Image
+                src="/logo.png"
+                alt="Bliz Services"
+                width={250}
+                height={250}
+              />
             </Link>
           </div>
         </div>

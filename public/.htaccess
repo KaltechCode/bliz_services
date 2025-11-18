@@ -1,0 +1,36 @@
+# Ensure a default index to avoid directory listing 403s
+DirectoryIndex index.html index.htm index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve existing files and directories directly
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Map "folder/" to "folder.html" if such file exists (static export)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} ^/(.+)/$
+  RewriteCond %{DOCUMENT_ROOT}/%1.html -f
+  RewriteRule ^(.+)/$ $1.html [L]
+
+  # Optional: normalize trailing slashes (remove)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)/$ $1 [R=301,L]
+
+  # Fallback: client-side routing (SPA)
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Optional: force HTTPS (uncomment if SSL is configured)
+#<IfModule mod_rewrite.c>
+#  RewriteEngine On
+#  RewriteCond %{HTTPS} !=on
+#  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#</IfModule>
+
+

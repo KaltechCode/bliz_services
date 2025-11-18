@@ -24,7 +24,7 @@ const Sidebar = ({ handleOpen }: Props) => {
   const clSideBarLogoWrapper = `flex justify-between items-center`;
   const clSideBarLogoInnerWrapper = `mt-16`;
   const clSmNav = `mt-10`;
-  const clSmUl = `xl:hidden flex flex-col gap-5 h-[100%]`;
+  const clSmUl = `md:hidden flex flex-col gap-5 h-[100%]`;
   const clSmLi = `link !text-darkblue`;
 
   // dropdown style

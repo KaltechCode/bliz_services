@@ -2,14 +2,14 @@ import React from "react";
 import HomeAboutImage from "../small/HomeAboutImage";
 import TransparentBlue from "../small/Buttons/TransparentBlue";
 import AboutParagrah from "../medium/AboutParagrah";
-import bgImg from "../../../public/Image/about-us-bg.jpg";
+// import bgImg from "../../../public/Image/about-us-bg.jpg";
 import { contactURL } from "@/constant/data";
 
 const HomeAbout = () => {
   return (
     <section
-      className="h-max py-16  md:min-h-[100vh] 3k:max-h-[800px] flex items-center relative top-0 left-0  bg-no-repeat bg-cover bg-center"
-      style={{ backgroundImage: `url(${bgImg.src})` }}
+      className="h-max py-16  md:min-h-[100vh]  xl:max-h-[800px] 3k:max-h-[800px] flex items-center relative top-0 left-0  bg-no-repeat bg-cover bg-center"
+      style={{ backgroundImage: `url(/Image/about-us-bg.jpg)` }}
     >
       <div className="flex flex-col md:grid grid-cols-2 gap-4 w-[90%] md:w-[90%] lg:w-[90%] 3k:w-[80%] mx-auto md:ml-0 3k:items-center">
         {/* curve image */}

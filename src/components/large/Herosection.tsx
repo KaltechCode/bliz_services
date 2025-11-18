@@ -10,7 +10,7 @@ import Image from "next/image";
 
 function Herosection() {
   return (
-    <section className="h-[calc(100vh_-_160px)] lg:h-[calc(100vh_-_200px)]  relative left-0 right-0 bg-white herosection-landscape">
+    <section className="h-[calc(100vh_-_160px)] lg:h-[calc(100vh_-_200px)] lg:max-h-[850px]  relative left-0 right-0 bg-white herosection-landscape">
       <div className="w-full h-full grid grid-cols-1 grid-rows-10 lg:grid-rows-1 lg:grid-cols-10">
         <div className="row-span-10 col-span-1 lg:col-span-9 lg:row-span-1  md:rounded-br-[50px]  overflow-hidden">
           <Swiper
@@ -47,7 +47,7 @@ function Herosection() {
       </div>
       <div className="absolute -bottom-10 -right-5 hidden md:block">
         <Image
-          src={"/Circular Mess.png"}
+          src={"/Circular-Mess.png"}
           alt="overlay image circle"
           height={500}
           width={500}

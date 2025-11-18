@@ -5,7 +5,7 @@ import { headerAddress } from "@/constant/data";
 
 export default function HeaderAddressContainer() {
   return (
-    <div className="lg:col-span-6 lg:row-span-7 3k:col-span-7 bg-white flex gap-10 justify-end md:px-5 lg:px-0 lg:pr-10 relative left-0 right-0 clipy py-3 ">
+    <div className="md:col-span-6 md:row-span-7 3k:col-span-7 bg-white flex gap-10 justify-end  md:px-0 md:pr-10 relative left-0 right-0 clipy py-3">
       <HeaderSocialMedia />
       {headerAddress.map((item) => (
         <HeaderAdrress

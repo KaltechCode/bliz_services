@@ -1,7 +1,5 @@
 "use client";
-import { ArrowDown } from "@/constant/icons";
 import Link from "next/link";
-import React, { useState } from "react";
 
 type Props = {
   handBurger: boolean;
@@ -9,11 +7,11 @@ type Props = {
 };
 
 function Handburger({ handBurger, ref }: Props) {
-  const [dropdown, setDropdown] = useState(false);
+  // const [dropdown, setDropdown] = useState(false);
 
-  const handleDropdown = () => {
-    setDropdown(!dropdown);
-  };
+  // const handleDropdown = () => {
+  //   setDropdown(!dropdown);
+  // };
   return (
     <>
       {handBurger && (
@@ -22,7 +20,7 @@ function Handburger({ handBurger, ref }: Props) {
           ref={ref}
         >
           <nav className="h-full w-full mt-10">
-            <ul className=" xl:hidden flex flex-col gap-7 h-[100%]">
+            <ul className=" md:hidden flex flex-col gap-7 h-[100%]">
               <li>
                 <Link href={"/"} className="link">
                   HOME
@@ -38,7 +36,7 @@ function Handburger({ handBurger, ref }: Props) {
                   WORK ABROAD
                 </Link>
               </li>
-              <li
+              {/* <li
                 className="relative top-0 left-0 flex gap-3 items-center "
                 onClick={() => handleDropdown()}
               >
@@ -55,10 +53,9 @@ function Handburger({ handBurger, ref }: Props) {
                       : "hidden h-[0]"
                   }`}
                 ></div>
-              </li>
+              </li> */}
             </ul>
           </nav>
-          <p className="">Hello</p>
         </div>
       )}
     </>

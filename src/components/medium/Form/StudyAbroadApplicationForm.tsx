@@ -296,7 +296,7 @@ function StudyAbroadApplicationForm() {
         Radio: studyCountry,
         SingleLine: plannedMajor,
         TermsConditions: termsAccepted.toString(),
-        REFERRER_NAME: "https://accounts.zoho.com/",
+        REFERRER_NAME: "https://accounts.zoho.com",
       };
 
       await fetch(

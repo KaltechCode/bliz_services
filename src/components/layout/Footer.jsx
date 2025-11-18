@@ -14,7 +14,7 @@ import { FaEnvelopeOpenText } from "react-icons/fa";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
 import Link from "next/link";
-import img from "../../assets/images/logo.png";
+// import img from "../../assets/images/logo.png";
 
 const Footer = () => {
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
             {/* First Column */}
             <div className="mt-5 w-full md:col-start-1 md:col-end-2 lg:w-max">
               <Link href={"/"} className="">
-                <Image src={img.src} alt="Bliaz" width={250} height={250} />
+                <Image src="/logo.png" alt="Bliaz" width={250} height={250} />
               </Link>
 
               {/* contact details wrappers */}
@@ -144,7 +144,7 @@ const Footer = () => {
       <div className="w-[90vw] mx-auto lg:mx-0 lg:w-full lg:grid lg:grid-cols-10 mt-2">
         <div className="text-center lg:text-left sm:landscape:text-left md:text-left mt-8 pt-8 lg:mt-3 lg:py-2 border-t border-gray-700 lg:col-start-2 lg:col-end-10 lg:grid sm:landscape:grid md:grid  grid-cols-2">
           <Link
-            href={"https://kaltechconsultancy.tech/"}
+            href={"https://kaltechconsultancy.tech"}
             className="text-gray-400 text"
           >
             Designed by Kaltech

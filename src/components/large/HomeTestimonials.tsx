@@ -8,7 +8,7 @@ import { linkToMoreTestimonial } from "@/constant/data";
 const HomeTestimonials = () => {
   return (
     <section
-      className="h-auto py-20 lg:py-24 bg-gray-200 md:min-h-[100vh] flex items-center bg-cover bg-center bg-no-repeat"
+      className="h-auto py-20 lg:py-24 bg-gray-200 md:min-h-[100vh] lg:max-h-[800px] flex items-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bgImg.src})` }}
     >
       <Conatainer full={false}>

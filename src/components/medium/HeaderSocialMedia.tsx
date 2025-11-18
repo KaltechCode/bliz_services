@@ -4,7 +4,7 @@ import IHeader from "../small/Icons/IHeader";
 
 function HeaderSocialMedia() {
   return (
-    <div className="hidden justify-center items-center gap-3 lg:flex">
+    <div className="hidden justify-center items-center gap-3 md:flex">
       <div className="">
         <p className="font-light text-gray-400 font-optima smallText">
           Follow Us

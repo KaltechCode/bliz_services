@@ -17,8 +17,8 @@ const EduAUVI = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Bliss services",
-  description: "Study and Work Overseas",
+  title: "Bliz Services | Educational and Proffessional Consultancy",
+  description: "Do you want to work Overseas? Study Overseas, ",
 };
 
 export default function RootLayout({

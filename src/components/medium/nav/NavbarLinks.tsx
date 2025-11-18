@@ -12,7 +12,7 @@ function NavbarLinks() {
   };
 
   return (
-    <ul className="hidden xl:flex justify-center items-center gap-4 h-[100%] col-span-3">
+    <ul className="hidden md:flex justify-center items-center gap-4 h-[100%] col-span-3">
       <li>
         <Link href="/" className={getLinkClassName("/")}>
           HOME

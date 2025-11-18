@@ -15,14 +15,14 @@ function HeaderLinkBtnContainer() {
     setHandBur(false);
   });
 
-  const containerStyle = `w-full bg-white lg:col-span-7 lg:row-span-3  md:px-5 lg:px-0 lg:grid grid-cols-7`;
-  const innerContainer = `lg:col-span-6 3k:col-span-7 flex justify-between items-center h-full bg-darkblue lg:pr-10`;
+  const containerStyle = `w-full bg-white md:col-span-7 md:row-span-3 px-5 md:px-0 md:grid grid-cols-7`;
+  const innerContainer = `md:col-span-6 3k:col-span-7 flex justify-between items-center h-full bg-darkblue md:pr-5 lg:pr-10 md:landscape:pr-10`;
 
   return (
     <div className={containerStyle}>
       <div className={innerContainer}>
         {/* handburger for only (lg screen)  */}
-        <div className="xl:hidden" ref={ref}>
+        <div className="md:hidden" ref={ref}>
           <Menu
             size={35}
             color="#fff"

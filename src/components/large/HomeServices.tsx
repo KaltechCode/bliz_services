@@ -15,7 +15,7 @@ const HomeServices = () => {
   // };
 
   return (
-    <section className="h-auto py-24 lg:py-24  md:min-h-[100vh] lg:min-h-[100vh] flex items-center relative top-0 left-0 bg-gray-100 md:bg-white">
+    <section className="h-auto py-24 lg:py-24  md:min-h-[100vh] lg:min-h-[100vh] lg:max-h-[920px] flex items-center relative top-0 left-0 bg-gray-100 md:bg-white">
       <Conatainer full={false}>
         <div className="w-full flex flex-col justify-center items-center">
           {/* section title container */}
