@@ -2,7 +2,6 @@ import React from "react";
 import HomeAboutImage from "../small/HomeAboutImage";
 import TransparentBlue from "../small/Buttons/TransparentBlue";
 import AboutParagrah from "../medium/AboutParagrah";
-import bgImg from "../../../public/Image/about-us-bg.jpg";
 import { contactURL } from "@/constant/data";
 
 const HomeAbout = () => {
