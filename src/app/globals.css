@@ -145,7 +145,7 @@ p,
   @media (orientation: landscape) {
     @media (min-width: 768px) {
       height: 100vh;
-      min-width: 500px;
+      min-width: 501px;
       min-height: auto;
     }
   }
