@@ -9,7 +9,7 @@ import { applyStudyUrl } from "@/constant/data";
 const HomeWhy = () => {
   return (
     <section
-      className="py-20 lg:py-24 w-full bg-white h-auto bg-cover bg-no-repeat md:min-h-[100vh] lg:max-h-[800px] flex items-center bg-left-bottom md:bg-center"
+      className="py-20 lg:py-24 w-full bg-white h-auto bg-cover bg-no-repeat h-[min(100vh,1200px)] flex items-center bg-left-bottom md:bg-center"
       style={{ backgroundImage: `url(${bgImg.src})` }}
     >
       <Conatainer full={true}>

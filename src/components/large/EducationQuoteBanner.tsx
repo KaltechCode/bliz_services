@@ -13,7 +13,7 @@ function EducationQuoteBanner({
   image,
 }: bannerDataI) {
   return (
-    <section className="relative h-[calc(70vh_-_100px)] 3k:h-[50vh] lg:h-[calc(100vh_-_200px)] w-full overflow-hidden">
+    <section className="relative py-20 h-[min(100vh,1200px)]  lg:py-20  xl:py-24 w-full overflow-hidden">
       {/* Background image */}
       <Image
         src={image ? image : bannerImg}

@@ -20,7 +20,7 @@ function Programs({
 }) {
   const numOfItem = data.length;
   return (
-    <section className="h-auto py-20 min-h-[100vh] md:min-h-[100vh]  lg:py-10 lg:min-h-[100vh]  xl:py-16 3k:max-h-[800px] flex items-center bg-[#F7F9FF] casesSection-landscape">
+    <section className="py-20 h-[min(100vh,1200px)] lg:py-16   xl:py-24  flex items-center bg-[#F7F9FF] casesSection-landscape">
       <Conatainer full={false}>
         <h2 className="session-title-text text-center !text-black">
           {title} <span className="text-blue">{spanTitle}</span>

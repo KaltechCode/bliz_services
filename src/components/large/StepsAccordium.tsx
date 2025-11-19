@@ -18,7 +18,7 @@ function StepsAccordium({
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   return (
     <section
-      className="h-max py-16  md:min-h-[100vh] 3k:max-h-[800px] flex items-center relative top-0 left-0  bg-no-repeat bg-cover bg-center"
+      className="py-16  h-[min(100vh,1200px)] flex items-center relative top-0 left-0  bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImg.src})` }}
     >
       {" "}

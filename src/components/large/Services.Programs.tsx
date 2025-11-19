@@ -15,7 +15,7 @@ function ServicesPrograms({ title1, title2, data }: programServicesSectionI) {
     ref.current?.slideNext();
   };
   return (
-    <section className="h-auto py-20 md:min-h-[100vh]  lg:py-0 lg:min-h-[100vh]  xl:py-16 3k:max-h-[800px] flex items-center bg-white casesSection-landscape">
+    <section className="py-20 h-[min(100vh,1200px)]  lg:py-16  xl:py-24  flex items-center bg-white casesSection-landscape">
       <Conatainer full={false}>
         <div className="">
           <div className="md:grid grid-cols-10 gap-1 items-end">
