@@ -22,10 +22,20 @@ const HomeFAQ = () => {
                   <p className="!text-[#1717B0] session-title-text">
                     OUR SERVICES BENEFITS{" "}
                   </p>
+                  <p className="!text-[#1717B0] session-title-text">
+                    OUR SERVICES BENEFITS{" "}
+                  </p>
                 </div>
 
                 {/* Section title */}
                 <div className="mt-5 w-[90%] md:w-full">
+                  <p className="text-black text-base font-normal">
+                    At Bliz Services, we understand that pursuing education or
+                    work opportunities abroad is a life-changing decision. Our
+                    mission is to simplify the process, guide you every step of
+                    the way, and open doors to opportunities that align with
+                    your dreams. Here’s why thousands trust us:
+                  </p>
                   <p className="text-black text-base font-normal">
                     At Bliz Services, we understand that pursuing education or
                     work opportunities abroad is a life-changing decision. Our

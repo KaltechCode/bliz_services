@@ -5,6 +5,7 @@ import bgImg from "../../../public/Image/testimonial-bg.png";
 import Link from "next/link";
 import { linkToMoreTestimonial } from "@/constant/data";
 
+
 const HomeTestimonials = () => {
   return (
     <section
@@ -19,11 +20,16 @@ const HomeTestimonials = () => {
                 <p className="!text-blue session-title-text ">
                   Our Testimonials
                 </p>
+                <p className="!text-blue session-title-text ">
+                  Our Testimonials
+                </p>
               </div>
 
               <div className="mt-5 w-[80%] md:w-full">
                 <h2 className="py-1 !text-black Emphasis-text">
+                <h2 className="py-1 !text-black Emphasis-text">
                   What people say about{" "}
+                  <span className="!text-blue border-b-2 border-blue Emphasis-text">
                   <span className="!text-blue border-b-2 border-blue Emphasis-text">
                     Bliz Services
                   </span>
@@ -31,6 +37,16 @@ const HomeTestimonials = () => {
               </div>
             </div>
 
+            <div className="mt-5 md:mt-2">
+              <Link
+                href={linkToMoreTestimonial}
+                target="_blank"
+                className="w-max px-[16px] py-[8px] bg-gradient-to-r from-gray-300 to-gray-50 text-[#1717B0] font-normal text-base border border-[#1717B0] border-solid rounded-full flex gap-2 items-center group hover:bg-[#1717B0] hover:text-darkblue hover:border-darkblue transition-all duration-500 h-max
+    "
+              >
+                View More
+              </Link>
+            </div>
             <div className="mt-5 md:mt-2">
               <Link
                 href={linkToMoreTestimonial}

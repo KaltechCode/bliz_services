@@ -4,6 +4,10 @@ import { useState } from "react";
 import { Menu } from "@/constant/icons";
 import Transparent from "@/components/small/Buttons/Transparent";
 import Sidebar from "./Sidebar";
+<<<<<<< HEAD
+=======
+import Logo from "../../../assets/images/logo.png";
+>>>>>>> 46b3e6c45dcdbb37d696201ca908a3c237507b54
 import Link from "next/link";
 function SmallScreen() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,12 +36,16 @@ function SmallScreen() {
           {/* small screen modal logo wrapper */}
           <div className={clLogoInnerWrapper}>
             <Link href={"/"}>
+<<<<<<< HEAD
               <Image
                 src="/logo.png"
                 alt="Bliz Services"
                 width={250}
                 height={250}
               />
+=======
+              <Image src={Logo} alt="Bliaz" width={250} height={250} />
+>>>>>>> 46b3e6c45dcdbb37d696201ca908a3c237507b54
             </Link>
           </div>
         </div>
