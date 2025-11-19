@@ -21,9 +21,6 @@ const HomeWhy = () => {
               <p className="!text-blue session-title-text">
                 WHY WE ARE THE BEST{" "}
               </p>
-              <p className="!text-blue session-title-text">
-                WHY WE ARE THE BEST{" "}
-              </p>
             </div>
             {/* title */}
             <div className="mt-5 w-[90%] md:w-full xl:w-[80%] md:t-3">
@@ -47,7 +44,6 @@ const HomeWhy = () => {
               <HomeProgressContainer />
             </div>
             <div className="mt-10">
-              <TransparentBlue url={applyStudyUrl} text="Apply Now" />
               <TransparentBlue url={applyStudyUrl} text="Apply Now" />
             </div>
           </div>

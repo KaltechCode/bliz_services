@@ -22,9 +22,6 @@ const HomeFAQ = () => {
                   <p className="!text-[#1717B0] session-title-text">
                     OUR SERVICES BENEFITS{" "}
                   </p>
-                  <p className="!text-[#1717B0] session-title-text">
-                    OUR SERVICES BENEFITS{" "}
-                  </p>
                 </div>
 
                 {/* Section title */}
