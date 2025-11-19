@@ -17,10 +17,6 @@ import {
 } from "./icons";
 
 import { broadcast, insurance, policy, processIcon } from "@/assets/icons";
-<<<<<<< HEAD
-=======
-import { baseUrl } from "@/helpers/baseUrl";
->>>>>>> 46b3e6c45dcdbb37d696201ca908a3c237507b54
 
 const SocialLinks: { Icon: IconType; name: string; url: string }[] = [
   {
@@ -54,7 +50,6 @@ export const BayStreet =
 export const Cameroon =
   "https://www.google.com/maps/place/Bonduma+Spring/@4.155015,9.2648712,17.14z/data=!4m6!3m5!1s0x106133ad7b5d54c1:0x69a82b416e25fe1!8m2!3d4.1549898!4d9.2697507!16s%2Fg%2F11v5vy05yp?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D";
 
-<<<<<<< HEAD
 export const contactURL = `/contact-us`;
 
 export const applyWorkUrl = `/apply/work-abroad`;
@@ -64,17 +59,6 @@ export const applyStudyUrl = `/apply/study-abroad`;
 export const studyPageUrl = `/education`;
 
 export const workPageUrl = `/employment`;
-=======
-export const contactURL = `${baseUrl()}/contact-us`;
-
-export const applyWorkUrl = `${baseUrl()}/apply/work-abroad`;
-
-export const applyStudyUrl = `${baseUrl()}/apply/study-abroad`;
-
-export const studyPageUrl = `${baseUrl()}/education`;
-
-export const workPageUrl = `${baseUrl()}/employment`;
->>>>>>> 46b3e6c45dcdbb37d696201ca908a3c237507b54
 
 export const location = [
   {

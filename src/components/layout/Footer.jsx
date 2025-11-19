@@ -26,11 +26,7 @@ const Footer = () => {
             {/* First Column */}
             <div className="mt-5 w-full md:col-start-1 md:col-end-2 lg:w-max">
               <Link href={"/"} className="">
-<<<<<<< HEAD
                 <Image src="/logo.png" alt="Bliaz" width={250} height={250} />
-=======
-                <Image src={img.src} alt="Bliaz" width={250} height={250} />
->>>>>>> 46b3e6c45dcdbb37d696201ca908a3c237507b54
               </Link>
 
               {/* contact details wrappers */}
